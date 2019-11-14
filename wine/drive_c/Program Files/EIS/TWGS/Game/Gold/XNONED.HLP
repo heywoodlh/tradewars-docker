@@ -1,0 +1,660 @@
+[PREVXNON]
+Previous Race
+Page back through the available alien races.
+[NEXTXNON]
+Next Race
+Page forward through the available alien races.
+[RACEPLURAL]
+Edit Race Title
+Change the text of the race title.  This title is intended to describe the race as
+a whole, e.g. "Humans".
+[RESETRACE]
+Reset Race Settings
+Reset the alien race settings to the original, standard settings.  Only applicable
+to the standard Ferrengi and Alien Traders.
+[RACESINGLE]
+Edit Alien Title
+Change the text of the alien title.  This title is intended to describe an individual
+within this race, e.g. "Human".
+[GORACE]
+Get Alien Race
+Select an alien to edit from all available alien races.  You will be given "<" and
+">" commands to page backward and forward through the available aliens if there
+are too many to display on a single page.
+
+On this and many other alien lists, you will see a + next to active aliens.
+[NEWRACE]
+Create New Alien Race
+When creating a new alien, you will first be asked to select an alien to base your
+new design on.  This will save time when creating slight modifications to existing
+alien races.  Once this race has been chosen, the new alien is created as a
+duplicate of that race.  There is no further association between the two races,
+and you can make the new race as different from the original as you wish.
+
+If this command is invoked from a deleted alien race record, the new alien will
+replace the deleted alien.  Otherwise, the new alien is appended to the end of the
+alien race database.
+[DELETERACE]
+Delete Alien Race
+You will be prompted to confirm this operation.
+
+When attempting to delete an alien race, the editor will first deactivate it.  If
+deactivation fails (see help on Activate), the alien will not be deleted.  If
+successful, the alien will be physically removed from your database.  In order
+to maintain alien race IDs during an active game, deleted aliens will be replaced
+with an empty record.  You may create a new alien at the location of the deleted
+alien by selecting that alien and using the new alien command.  Later, when the
+game is reset, the database will be packed so that all empty alien race records
+will be removed.
+[ABORTCHANGES]
+Abort Changes
+You can revert the current alien race to the last saved version by using this
+command.  You will be prompted to confirm this operation.
+
+Some operations will commit the alien race to disk, and you will be notified
+before the commit occurs.
+[COMMITCHANGES]
+Commit Changes
+You can force the editor to write the alien race to disk using this operation.
+
+You will be prompted for confirmation.
+[HELP]
+Help
+You can receive help for commands by pressing the ? key and then selecting the
+command you are interested in.  You will also be shown the help associated with
+many commands as you are using them.
+[SETTINGS]
+Settings
+Various settings to describe this alien race.
+[SPAWNINGPROFILE]
+Spawning Profile
+Use this screen to customize the equations used to spawn new aliens.  There are
+several equation forms.  These use either the number of days that have passed in
+the game (T) or the generated experience for the spawned alien (X), and from
+one to three constants (A, B, and C).  You can modify the constants to effect
+the results of the each equation.
+
+The equations determine a maximum and minimum amount that can be generated for
+a new alien depending on the age of the game, but the actual result is typically
+varied by the random function r(N) which returns a random value between 0 and N.
+[RESOURCES]
+Resources
+This screen determines what ships and planets this race will be given access to.
+The ships available to the race will be determined by the selected ship and planet
+deployment methods (General, Alien, and Specific).
+
+The actual ships available to a given alien will be limited by the ship ratings and the "Days Before Ship Is Accessible"
+settings.  For example, if a level II combat ship becomes accessible for this
+race at 20 days, then that means that an alien spawned with the maximum possible experience
+for 20 days (determined by the experience spawning profile equation) will be allowed access
+to a level II combat ship.  Before 20 days, no aliens of this race have access, at 20 days
+it will be rare, and as the game age increases ships of this level will become much more
+common.
+
+Aliens will show a preference for the highest level of ship that they have access
+to.
+[RANKINGS]
+Rankings
+Use this screen to customize the ranking for this alien race.  You can use the
+standard rank tables for good and evil or create your own for one or both.
+[MISCELLANEOUS]
+Miscellaneous
+Various fields used for the administration of the alien race within your game.
+[STARTDAY]
+Days Until Race Appears
+Specify the number of days that must pass in the game before this alien race first
+begins to appear.
+[FULLDAY]
+Days Until Full Strength
+Specify the number of days that must pass before this race is present in the game
+at full strength.
+[INITNUMBER]
+Initial Number of Aliens
+Specify the number of individual aliens that will exist on the first day that
+this race is present in the game.
+[MAXNUMBER]
+Maximum Number of Aliens
+Specify the number of individual aliens that will exist once this race is at
+full strength.
+[SHOWRANK]
+Show Alien Rank
+This setting determines how the aliens will appear in a sector display.
+
+If this setting is on, the alien names will be prefaced with a rank as determined
+by their alignment, experience level, and your selection of good and evil rank
+tables.
+
+If this setting is off, the alien names will appear without any rank.
+[MOVECHANCE]
+Move Chance
+This value determines how active the alien race will be in the game.  Each
+alien has an opportunity to move once every 30 seconds, and this setting determines
+the probability that the alien will do so.
+[ISORG]
+Treat As Organization
+You might want your non-players to be more of an organization than an alien race.
+This will effect where the description of the aliens will appear in the StarDock
+library, under Known Alien Races or Known Galactic Organizations.  The Ferrengi
+are an alien race, while the Alien Traders are a multiracial group of traders.
+
+You can create non-player corporations and such using this option.
+[EXPLOREFACTOR]
+Exploration Probability
+This setting determines the probability that an alien will explore new sectors rather
+than returning to the sector from which it came.  The default setting is 50%.  A setting
+of 100% means the the backtrack sector is never considered, and a setting of 0% means that
+it is always considered.  A 0% setting does not mean that the alien will always backtrack,
+but merely that it will always consider the backtrack sector evenly as one possible direction.
+[HOMESECTOR]
+Maintain Home Sector
+This option unlocks many special alien race behaviors.  A race with a Home
+Sector will also maintain a cluster of sectors around that sector (HomeSpace),
+and a homeworld that is located in the Home Sector.  Aliens will be spawned
+within HomeSpace, and they will fight to protect it from intruders.  For
+non-aggressive races, defensive fighters will be deployed around HomeSpace.
+For aggressive races, offensive fighters and mines will be deployed.  With
+"restrict weak aliens" set to true, aliens without the required number of
+fighters will be unable to leave HomeSpace.  Aliens who loose most of their
+fighters may return to HomeSpace in search of more fighters.
+
+The aliens will fight to keep their homeworld.  If it is captured, they will assault
+the homeworld until it is recaptured.  If it is moved, they will search for it.
+
+An alien homeworld cannot be destroyed with Atomic Detonators.
+[RIMSECTORS]
+Minimum Sectors in HomeSpace Rim
+A race's HomeSpace will include the Home Sector, all adjacent sectors, and a number of outer
+sectors from this minimum number up to 36.  These sectors will be marked with a Nebula name
+that indicates the race that calls it home, for example, "Ferrengi Space".
+
+One-way warps are not followed when determining what sectors lie in HomeSpace.
+
+NOTE:  This setting only effects an alien race when it first appears in the game.
+Once the HomeSpace sectors have been chosen, they will not change until the game
+is reset.
+[STARTCITADEL]
+Starting Citadel Level
+When an alien race first appears in a game, the homeworld is created.  This value
+determines what citadel (if any) the planet will have when it first appears.  The aliens
+will build and upgrade a Citadel to the maximum possible level for the homeworld
+planet type.  Setting this level will control the strength of the alien race early in
+the game.
+
+NOTE:  This setting only effects an alien race when it first appears in the game.  The
+homeworld is created the day the race appears and changes to this setting will not
+effect the homeworld after that time.
+[ASSAULTFORCE]
+Homeworld Assault Force
+This setting determines the number of aliens to be sent against a captured homeworld
+during an assault.  This number represents a percentage of the total number of aliens
+active at the time the assault begins.  There will be at least one alien per assault
+minimum.
+[RUNAWAY]
+Retreat Threshold
+When an alien sustains damage, either from combat with a player, or from NavHaz, Mines,
+Quasar Cannons, etc, it will either fly to a Class 0 port to buy more fighters (if it has
+enough credits) or return to HomeSpace once its fighter count drops below this number.
+[HOLDUPGRADE]
+Hold Upgrade Units
+When an alien is trading at ports, it will make a run to a Class 0 port if it earns
+enough credits to purchase this number of holds.  This allows the alien to increase its
+trading efficiency as it earns credits.
+[FIGUPGRADE]
+Fighter Upgrade
+When an alien is trading at ports, it will make a run to a Class 0 port if it earns
+enough credits to purchase this number of fighters.
+[AWARDBOUNTY]
+Award Bounty
+If this option is set, then killing an alien of this race will earn a player a bounty.
+The value of the bounty is based on the number of kills by the alien, as well as the
+age of the game.  Bounty amounts can range from about 60 credits for a new alien on day
+one, to almost 1 million credits for a veteran alien on day 150.
+
+If a race is evil (average alignment is < 0), then the player must be good and the killed
+alien must be evil in order for the bounty to be awarded.  It is awarded by the
+Federation.
+
+If a race is good, then the player must be evil and the killed alien must be good in
+order for the bounty to be awarded.  It is awarded by the Underground.
+[SHY]
+Xenophobic
+This setting determines whether or not the aliens shy away from others.  Shy
+aliens will tend to exit from a sector soon after a trader enters.
+
+Enabling this setting will increase the load on the alien server.
+[PROTECTIVE]
+Protective
+This setting determines whether the aliens will attempt to protect members of
+their own race (or organization), including themselves.
+
+If this setting is enabled and a player attacks a member of this "race", that
+alien and all others in the same sector will strike back at the player.  Only
+one attack per alien will occur per attack against an alien.
+[BANDING]
+Travel In Groups
+With this setting enabled, the individuals of this alien race will tend to group
+together in a single sector.  When an alien moves from one sector to another,
+he will take the other aliens in the sector with him, up to the maximum group
+count.
+[BANDCOUNT]
+Maximum Members of Group
+For banding alien groups, this number determines the maximum number of individual
+aliens that will tend to move around together.
+[ANOMALOUS]
+Anomalous Aliens
+By enabling this setting, you create the possibility for the occasional alien to be
+generated far in advance of what the current game day would dictate.  There is a one
+percent chance per spawned alien that an unusually advanced alien will be generated.
+If an alien is advanced, it is spawned as if it was being generated on from 100 to 200
+days in the future.  Ships that are not currently available may be available to an
+advanced alien.
+[ANOMALYCHANCE]
+Probability of Anomalous Alien
+If "Anomalous Aliens" is enabled, this is the probability that a special advanced
+alien will be spawned.  The probability is determined as 1 in AnomalyChance, so a
+setting of 100 will generate roughly one for every 100 aliens spawned, and a setting
+of 1000 will generate roughly one for every 1000.
+[GRUDGE]
+Alien Grudges
+In order for a grudge to occur, a player must destroy an alien in the same sector as another
+alien of that race.  If no other alien views the attack, no grudge will exist.
+
+Up to 10 individuals can be "remembered" by each race.  As new players are added
+to the grudge list, older players are removed.  A player can only be on the grudge list once,
+but with each offense the player is moved to the beginning of the list.
+
+Aliens will attack a begrudged player when entering the player's sector, or when the player
+enters the alien's sector.  Once in the same sector, the aliens will not be hostile (they
+got their point across).
+
+The severity of an alien's attack depends on how recent the begrudged offense occurred.  In
+other words, players near the front of the grudge list will receive a more severe attack
+than those near the end.
+[REGENERATE]
+Alien Regeneration
+Aliens can regenerate their fighters and shields to the average level for the
+current game day.  This has three effects.  Aliens that lose fighters and shields in
+combat can have them replaced slowly over time, aliens spawned with less than
+average fighter and shield amounts will regenerate toward average, and all aliens
+will increase their fighter and shield values to keep up with the average values of
+these fields as the game progresses.
+
+Regeneration occurs whenever an alien attempts to move, whether or not it actually does.
+This means that there is a correlation between the move frequency and regeneration rate.
+Also, since banding aliens move more frequently, these will regenerate more rapidly as
+well.
+[AGGRESSIVE]
+Aggressive Aliens
+An aggressive alien will attack players on sight when it moves into a sector occupied by
+a player or when a player moves into a sector that it occupies.  Aggressive aliens will
+also move into sectors that contain hazards like NavHaz, Mines and Fighters.  They will
+do battle to the death with Fighters in their path, regardless of the mode that the
+fighter is in (Offensive, Defensive, Toll).
+
+Also, Aggressive races that maintain a Home Sector will deploy offensive fighters and
+mines to protect their HomeSpace.
+
+NOTE:  Aliens may not attack FedSafe players in FedSpace.
+[IGNOREALIENS]
+Ignore Other Alien Races
+If this setting is enabled, Gold aliens will ignore other alien races.  This means that
+they will ignore their fighters, their planets won't fire Quasars, etc.  In order for a race
+to ignore another race, both races must have the Ingore Aliens setting enabled.  If one
+alien races is not ignoring other races, other races will not ignore them even if they are
+flagged with this setting.
+[FEDSHY]
+Avoid FedSpace
+When this setting is enabled, the aliens will be spawned in sectors outside of FedSpace.
+When they move, they will attempt to avoid FedSpace sectors.  When attacked, aliens may
+retreat into FedSpace temporarily.
+[STAYHOME]
+Restrict Weak Aliens
+If this setting is enabled (requires Home Sector), aliens with less than a certain
+number of fighters will be unable to leave the HomeSpace sectors (Home sector, adjacent
+sectors and rim sectors).  Once they are outside of HomeSpace, they may drop below this
+fighter count without returning.  If they drop below the "Retreat Threshold", they may return
+to HomeSpace to gather more fighters.
+
+The number of fighters required before leaving HomeSpace is a function of the age of the
+race.  When the race first appears, 100 fighters will be required.  At the time the race
+reaches full strength, 1000 fighters will be required.  This is the maximum number
+required.
+[TRADERS]
+Allow Aliens to Trade
+This setting is the key to allowing your aliens to increase in power.  Aliens will buy and
+sell product at ports, then use the profits to buy more holds, fighters and shields.
+
+A race without a homeworld may or may not trade at ports, but a race with a homeworld is
+required to trade in order to maintain the home planet.
+[TRADEPAIRS]
+Trade Port Pairs
+Aliens will earn credits randomly buying and selling products from port to port, but
+to be truly efficient they must locate and trade port pairs.  An alien will lock onto a
+port pair if two ports are combatible and if both ports have a minimum level of product
+buying or selling capacity.  This minimum capacity is determed by the "Minimum product
+capacity" setting.  In the case of the Ferrengi and Alien Traders defaults, this setting
+is 50% maximum capacity.  Also, an alien will continue to trade a port pair until one of the
+ports reaches a depletion level determined by the "Product depletion threshold".  Again,
+the Ferrengi and Alien Traders default is a depletion level of 25% maximum capacity.
+[MINIMUMCAPACITY]
+Minimum Port Pair Product Capacity
+This is the percent of maximum capacity that a product must be trading at for a port to
+be considered for port pair trading.  In the case of the Ferrengi and Alien Traders defaults,
+this setting is 50% maximum capacity.
+[PRODUCTDEPLETION]
+Product Depletion Threshold
+This is the percent of maximum capacity to which a product will be traded down during
+port pair trading.  In the case of the Ferrengi and Alien Traders defaults, this setting
+is 25% maximum capacity.
+[CRIMINAL]
+Rob and Steal
+If this setting is enabled, aliens with sufficient negative alignment will rob and
+steal from ports.  The amount they will take depends on the alien's experience, so
+more advanced aliens will be more effective.
+[ROBPERCENT]
+Robbing Percent
+For aliens who are allowed to rob and steal from ports, this setting specifies the
+maximum percentage of a ports profits that an alien may rob.  The actual amount robbed
+depends on the experience of the alien, but it will not exceed this percentage.
+[LIMITAGGRESSION]
+Limited Aggression
+For aliens who are aggressive, this setting will cause aliens to only attack players who
+are of less extreme alignment.  So, for example, a good alien with alignment of 1000 will only
+attack players of alignment < 1000, while an evil alien with alignment of -1000 will only
+attack a player of alignment > -1000.
+[LIMITIGNORES]
+Ignore By Alignment
+For aliens who are set to ignore other aliens, this setting will cause aliens to only ignore
+other aliens of the same basic alignment.  So, for example, a good alien race will ignore other
+good aliens, but not evil aliens, while an evil alien race will ignore other evil aliens, but
+not good aliens.
+
+Here, the alignment of the race is determined by the average alignment spawn value.  A race
+may have both good and evil aliens, but if the average alignment is >= 0, the race is considered
+good.
+[SPAWNMETHOD]
+Spawning Method
+Select the form of the spawning equation for this field.  You can modify the variables
+of an equation to fit the desired results.  Results of a given spawning equation and
+variable set are displayed in the "sample by day" report.
+[SPAWNA]
+Variable A
+Setting the value for variable A will effect the results of the associated spawning
+equation.
+[SPAWNB]
+Variable B
+Setting the value for variable B will effect the results of the associated spawning
+equation.
+[SPAWNC]
+Variable C
+Setting the value for variable C will effect the results of the associated spawning
+equation.
+[SAMPLESPAWN]
+Sample Spawning Method
+To help clarify the spawned characteristics of your aliens using a given equation form,
+you can generate a sample of a field for aliens spawned on a given day.  As a sample
+(taken from 1000 spawning events), the values will change slightly from one sampling to
+the next.  Select "Sample" multiple times to see how consistent the sampled values are.
+
+Note that many fields have boundaries imposed on them by the alien ship type or other
+circumstances.  The spawned value will be truncated to the upper or lower acceptable
+boundary in actual practice.  For example, if the Experience equation returns all
+negative numbers, Experience will be truncated to 0 for ALL spawned aliens ALWAYS.  For
+this report, an upper and lower boundary of 9,999,999 and -9,999,999 has been imposed.
+
+The sample report shows the maximum and minimum values on this day.  It also shows values
+associated with several probabilities to indicate what the most probable values will be on this day.
+[SAMPLESPAWNDAY]
+Sample Day
+When viewing sample data, you can specify the day at which the sample is to occur using
+this value.  Acceptable values range from the alien start day to the maximum value for days.
+[SPAWNREVERT]
+Revert Spawning Equation
+This command will revert the spawning equation and variables to the settings it
+had when you entered this screen or since you last committed the spawning equation.
+This will allow you to experiment with several settings and still be able to return
+to the values you started with.
+
+Note that you can still abort any changes to the spawning equations from the Alien
+Editor at any time before the alien record is committed to disk.
+[SPAWNCOMMIT]
+Commit Spawning Equation
+Using this command, you can commit the changes you have been making in the spawning
+profile editor.  Once committed, you can make more changes and still return to the
+committed settings by using the revert command.
+
+Note that you can still abort any changes to the spawning equations from the Alien
+Editor at any time before the alien record is committed to disk.
+[SPAWNFIELD]
+Modify Spawn Field
+The alien characteristics are generated as each alien is spawned.  These settings determine
+how each characteristic is generated over the life of the game.
+
+The main spawning field menu shows each of the configurable fields along with some
+sample values.  The samples are shown for the start day and "full strength" day of the
+given alien race.  The values shown are the maximum (or minimum) value and the average
+value for that field on that day.  No alien will be spawned with a value greater (or less)
+then the boundary value, and the majority will receive the average value.
+
+Selecting a field will open the spawning equation editor.  You can modify the form
+of the equation and set values for the variables of the chosen equation.  You will also be shown
+a more complete sample of values from any selected day of the game.  You can use this
+information to choose the best spawning profile for your aliens.
+[SHIPDEPLOYS]
+Ship Deployments
+The alien race can be given access to ships of any combination of three deployment
+methods:  General, Alien, and Specific.
+
+  General  : The alien has access to any ship specified to be of General
+             Deployment.
+  Alien    : The alien has access to ships specified to be of Alien Deployment
+             with this race specified as the target race of that deployment.
+  Specific : Using a Specific Ships list, you can override the deployments of
+             up to 28 individual ship classes.  For example, you could give this
+             race access to a ship that uses alien deployment but that does not
+             specify this race as the target, or you could list several general
+             ships that the race can have access to without granting free access
+             to all general ships (as done with Alien Traders).
+[PLANETTYPE]
+Homeworld Type
+This specifies the type of the planet to be used as the alien homeworld.  Planets
+of General or Manual deployment may be specified.
+
+NOTE:  This setting only effects an alien race when it first appears in the game.
+Once the homeworld has been created, this setting will have no effect until the
+game is reset.
+[SPECIFICSHIPS]
+Specific Ships
+Build a list of specific ship classes to override the deployment methods of the specified
+ships.  The maximum number of specific ships is 28.
+[HOMEWORLDNAME]
+Homeworld Name
+This is the name of your alien race's homeworld.  For example, the Ferrengi homeworld is
+called "Ferrengal".
+[DAYLVLII]
+Days Until Level II Access
+This specifies the number of days that must pass before an individual spawned alien will
+be given access to a level II ship of the specified type (Combat, Cargo, Transport,
+or Scout).  The ship is assigned an experience threshold of the maximum possible
+for the specified day.  Any alien spawned with experience greater than that threshold
+will be given access to ships of this level.
+
+Each ship is rated for each of the four basic ship types from level I to level IV.
+A ship could be, for example, a Combat II, Cargo III, Transport II, and Scout I.
+If a spawned alien qualifies for access to a Combat II but not for a Cargo III, then
+that alien will be denied access to this ship.  The spawned alien must have high
+enough experience to satisfy the requirements of all four ship levels before it
+can be given access to the ship.
+
+* means the ship level will be available to ALL aliens from the first day.
+[DAYLVLIII]
+Days Until Level III Access
+This specifies the number of days that must pass before an individual spawned alien will
+be given access to a level III ship of the specified type (Combat, Cargo, Transport,
+or Scout).  The ship is assigned an experience threshold of the maximum possible
+for the specified day.  Any alien spawned with experience greater than that threshold
+will be given access to ships of this level.
+
+Each ship is rated for each of the four basic ship types from level I to level IV.
+A ship could be, for example, a Combat II, Cargo III, Transport II, and Scout I.
+If a spawned alien qualifies for access to a Combat II but not for a Cargo III, then
+that alien will be denied access to this ship.  The spawned alien must have high
+enough experience to satisfy the requirements of all four ship levels before it
+can be given access to the ship.
+
+* means the ship level will be available to ALL aliens from the first day.
+[DAYLVLIV]
+Days Until Level IV Access
+This specifies the number of days that must pass before an individual spawned alien will
+be given access to a level IV ship of the specified type (Combat, Cargo, Transport,
+or Scout).  The ship is assigned an experience threshold of the maximum possible
+for the specified day.  Any alien spawned with experience greater than that threshold
+will be given access to ships of this level.
+
+Each ship is rated for each of the four basic ship types from level I to level IV.
+A ship could be, for example, a Combat II, Cargo III, Transport II, and Scout I.
+If a spawned alien qualifies for access to a Combat II but not for a Cargo III, then
+that alien will be denied access to this ship.  The spawned alien must have high
+enough experience to satisfy the requirements of all four ship levels before it
+can be given access to the ship.
+
+* means the ship level will be available to ALL aliens from the first day.
+[SAMPLESHIPS]
+Sample Available Ships
+It is extremely important to understand the timeline for alien ship deployment.
+You can modify the timeline for ship deployment using the "Days Until Ship Appears"
+settings, then sample the available ships to see if the ships are being deployed
+as you intend.
+
+There are several reasons why a ship might not be available to an alien when it
+is spawned.  The alien might not have sufficient experience to gain access to a
+ship of a certain level, the ship might be off limits to all aliens, it might be
+unique and not currently available, or it might not be targeted for deployment
+by this race.
+
+You should make sure that at least one ship is guaranteed to be accessible for
+any alien generated on day 0.  If this is not the case, your aliens will not be
+allowed into the game until a ship becomes available.
+[SHIPSAMPLE]
+Sample Ships
+This report is similar to the one generated by the Spawning Equation Editor, but
+the values are for spawned experience only.  The left column contains several
+experience values sampled for the specified day, including the maximum, the minimum,
+and the average (50%).  These experience amounts are used as thresholds to determine
+what ships will be guaranteed to be available to aliens that fall into each group.
+
+For example, if the experience reported for "50% at or above" is 1000, then the
+aliens in this group (upper 50% of spawned experience) will be guaranteed access to
+any ships with an experience threshold of 1000 or less.  Ships with higher ratings
+(Combat, Scout, etc) will generally have higher experience thresholds and will only
+become available to aliens later in the game.  You set the day (and therefore the
+experience) that each ship rating becomes available using the "Days Until Ship Appears"
+settings.
+[SHIPSAMPLEDAY]
+Sample Day
+You can set the day of the sample to get an idea of the timeline for ship deployment
+by this race.  The ships are deployed based on the experience formula you selected in
+the Spawning Equation Editor.
+
+It is important to check the start day for your alien race to see that at least one
+ship is guaranteed to be available for even those aliens spawned with the minimum
+possible experience.  If this is not the case, your alien will not be able to enter
+the game and an error will be displayed on the non-player server status screen.
+
+When selecting the day at which a ship rating becomes available to your race, keep
+in mind that the upper threshold of experience is usually only attained by a small
+percentage of spawned aliens.  It may be several days beyond this day before a ship
+with that level first appears.  You should use this report to determine how likely
+a given ship is to be deployed by an alien on a given day.
+[SHOWSHIPS]
+View Ship List
+Use these commands to view a list of the ships available to a given alien group.
+Each group is limited to only those ships guaranteed to be accessible to an alien with
+experience at or above the specified level.
+
+The "Total Ships" group indicates the total number of ships that will be available to
+this alien race at some point in the game, assuming an alien can be spawned with sufficient
+experience.  Ships are included in this group if they are targeted for deployment by
+the alien race, they are active, and they are either not unique or are unique and available.
+[GOODRANK]
+Good Rank File
+Specify the name of the custom rank table, or leave blank to use the default
+table of good ranks.
+
+A rank table is simply a list of ranks from the lowest to the highest.  See
+DEFGOOD.RNK for an example.
+[EVILRANK]
+Good Rank File
+Specify the name of the custom rank table, or leave blank to use the default
+table of evil ranks.
+
+A rank table is simply a list of ranks from the lowest to the highest.  See
+DEFEVIL.RNK for an example.
+[MAXRANK]
+Highest Rank At...
+Specifies the day at which the maximum rank can be achieved.  The maximum
+possible experience that could be achieved by a spawned alien on that day
+(as determined by the experience spawning profile equation) is used to determine
+the thresholds of all other ranks.  This allows you to easily specify the game
+age at which the strongest aliens will begin to appear.
+[VIEWGOOD]
+View Good Ranks
+View a sample of the ranks for positive aligned aliens of this race.
+[VIEWEVIL]
+View Evil Ranks
+View a sample of the ranks for negative aligned aliens of this race.
+[AIMOD]
+Alien Artificial Intelligence Module
+This module is the brains of the alien race.  You can make the alien race behavior
+completely different by swapping out the AI module.
+
+These modules can be created with a special development kit available from
+Martech Software, Inc.  Aliens can be made to react to every event that players
+see and more.
+
+Look for new aliens using these AI modules coming soon from Martech Software, Inc. and
+other third party developers.
+
+NOTE:  The Gold Ferrengi will be the first aliens published with an AI module.
+       They will be available with the next revision of Trade Wars Gold, and
+       will replace the standard Ferrengi with greatly enhanced AI.
+[ALIENNAME]
+Alien Name File
+Specifies the custom name file to be used when generating the names of the spawned
+aliens.
+
+See the accompanying NONPNAME.DOC for a description of how these name files can
+be created.  Sample name files are located in the GOLD directory as TESTX.NAM.
+[SAMPALIENNAME]
+Sample Alien Names
+Use this option to view a sample of the names that will be given to your spawned
+aliens.  Each sample will be a new set of randomly generated names.
+[ALIENSHIP]
+Ship Name File
+Specifies the custom name file to be used when generating the names of the spawned
+alien's ships.
+
+See the accompanying NONPNAME.DOC for a description of how these name files can
+be created.  Sample name files are located in the GOLD directory as TESTX.NAM.
+[SAMPALIENSHIP]
+Sample Ship Names
+Use this option to view a sample of the names that will be given to your spawned
+alien's ships.  Each sample will be a new set of randomly generated names.
+[ANSIDESC]
+ANSI Illustration
+This is the name of the ANSI file to be displayed when describing this race.
+Race description files should be no more than 23 lines long.
+
+ANSI files must be placed in the ANSI directory off of the main data directory.
+[TEXTDESC]
+Text Description
+When a player has ANSI capability disabled or when the ANSI Illustration is not
+found or not specified, the text description will be displayed.
+
+Text description files must be placed in the ANSI directory off of the main data directory.
+[ACTIVE]
+Race Is Active
+You must enable this option before the race will be active in the game.  If you
+attempt to deactivate an alien race while it has active members, you will receive
+notification.  If you proceed, all active aliens of this race will be removed from
+the game.

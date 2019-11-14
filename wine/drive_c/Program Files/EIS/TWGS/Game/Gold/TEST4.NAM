@@ -1,0 +1,29 @@
+;The Borg.
+
+[Options]
+BuildName=No
+NameTitle=Borg
+Names=1
+Repeats=No
+
+[First]
+1 of 4
+2 of 4
+3 of 4
+4 of 4
+1 of 8
+2 of 8
+3 of 8
+4 of 8
+1 of 12
+2 of 12
+3 of 12
+4 of 12
+5 of 12
+6 of 12
+7 of 12
+8 of 12
+9 of 12
+10 of 12
+11 of 12
+12 of 12

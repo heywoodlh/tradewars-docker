@@ -1,0 +1,39 @@
+:Base TWGS.HLP
+:Title TWGS Help
+1 Configuring TWGS
+2 Installing TCP/IP Protocol
+3 Installing TCP/IP Protocol=Install_TCP/IP
+2 Typical Configurations
+3 Local Stand-alone Access=Local_Stand_Alone
+3 Local Area Network=Local_Network
+3 Internet Access=Internet_Access
+3 Running with a BBS
+4 Wildcat 5/Winserver=Wildcat
+4 WorldGroup=Worldgroup
+4 Other TCP/IP-capable BBSs=OtherBBSs
+3 Running with Linux
+4 Running with Linux=Linux
+2 Creating Trade Wars Games
+3 Adding Games to TWGS=Adding_Games
+3 Initializing New Games=Initializing_Games
+2 Other settings
+3 Server Configuration=Server
+3 Miscellaneous Settings=Miscellaneous
+3 IP Lists=IP_Lists
+3 Register=Register
+1 Running as a service
+2 TWGS Service Manager=Service_Manager
+1 TWGS Tools
+2 Trade Wars Command Center
+3 Game List=Game_List
+3 Command Shell Icons=Shell
+3 Game Settings=Game_Settings
+3 Other Features=Other_Features
+2 Alien Manager
+3 Trade Wars Gold Alien Servers=Gold_Aliens
+3 Status Window=Status_Window
+3 Gold Race Tracking=Race_Tracking
+3 Other Features=Other_Alien_Features
+1 Spy Window=Spy_Window
+1 Troubleshooting
+2 Common Problems=Common_Problems

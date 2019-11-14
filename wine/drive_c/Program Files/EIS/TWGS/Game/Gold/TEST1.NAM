@@ -1,0 +1,23 @@
+;Brute force method - Names are specified in a list
+
+[Options]
+BuildName=No
+
+[First]
+John
+Gary
+MaryAnn
+Angel
+Tom
+Scott
+Eric
+Chris
+
+[Last]
+Pritchett
+Martin
+Bethune
+Beaudoin
+Millbern
+Johnson
+Dunbar

@@ -1,0 +1,223 @@
+[PREVPLAN]
+Previous Class
+Page back through the available planet classes.
+[NEXTPLAN]
+Next Class
+Page forward through the available planet classes.
+[PLANTITLE]
+Edit Planet Title
+Change the text and/or color format of this planet's title.
+
+To change the color, press the ` key.  The currently active color will be displayed with a menu of
+colors.  Make your selection and press enter to return to the Title edit field.
+[RESETPLAN]
+Reset Planet Settings
+Reset the planet settings to the original, standard settings.  Only applicable
+to the standard planets up to and including the Vaporous/Gaseous.
+[MOVEPLAN]
+Move Planet
+This option allows you to move an extended Planet class into a standard Planet slot.  This is
+useful when you import a Planet class that you want to assign to one of the standard Planets.
+[PLANCLASS]
+Edit Planet Class
+The class identifiers for a planet are its short-hand description.  The letters
+correspond to basic characteristics used to identify planets.  The dominant
+characteristic is assigned to the class and all other characteristics make up
+the sub-class.  These characteristics determine the starting parameters of the planet.
+
+The class identifiers describe the seven basic characteristics (in order of dominance: Geological Activity,
+Temperature, Hydrosphere, Terrain, Atmosphere, Gravity, and Weather) with which planets
+are classified.  These characteristics are segmented into five regions.  The
+mid-range is Normal (relative to Earth Type), and there are two regions above
+and below normal for more extreme characteristics.  One letter is designated for each of the 14 regions
+above and below norm, with the first region above and below given the capital letter
+and the second, more extreme region given the lower-case letter (spoken with a
+"prime", e.g. Class X and Class X Prime).
+[GOPLAN]
+Get Planet Class
+Select a planet to edit from all available planet classes.  You will be given "<" and
+">" commands to page backward and forward through the available planets if there
+are too many to display on a single page.
+
+On this and many other planet lists, you will see a + next to active planets.
+[NEWPLAN]
+Create New Planet Class
+When creating a new planet, you will first be asked to select a planet to base your
+new design on.  This will save time when creating slight modifications to existing
+planet classes.  Once this class has been chosen, the new planet is created as a
+duplicate of that class.  There is no further association between the two classes,
+and you can make the new class as different from the original as you wish.
+
+If this command is invoked from a deleted planet class record, the new planet will
+replace the deleted planet.  Otherwise, the new planet is appended to the end of the
+planet class database.
+[DELETEPLAN]
+Delete Planet Class
+You will be prompted to confirm this operation.
+
+When attempting to delete a planet class, the editor will first deactivate it.  If
+deactivation fails (see help on Activate), the planet will not be deleted.  If
+successful, the planet will be physically removed from your database.  In order
+to maintain planet class IDs during an active game, deleted planets will be replaced
+with an empty record.  You may create a new planet at the location of the deleted
+planet by selecting that planet and using the new planet command.  Later, when the
+game is reset, the database will be packed so that all empty planet class records
+will be removed.
+[ABORTCHANGES]
+Abort Changes
+You can revert the current planet class to the last saved version by using this
+command.  You will be prompted to confirm this operation.
+
+Some operations will commit the planet class to disk, and you will be notified
+before the commit occurs.
+[COMMITCHANGES]
+Commit Changes
+You can force the editor to write the planet class to disk using this operation.
+
+You will be prompted for confirmation.
+[HELP]
+Help
+You can receive help for commands by pressing the ? key and then selecting the
+command you are interested in.  You will also be shown the help associated with
+many commands as you are using them.
+[MAXIMUMVALUES]
+Maximum Values
+These fields specify the maximums for various planet class parameters.
+[INITIALVALUES]
+Initial Values
+These fields specify the initial values for fields that may change during the
+life of the planet.
+[CITADELVALUES]
+Citadel Values
+These fields specify the requirements that must be met in order for a Citadel to
+be constructed to a given level (from the level below it, not from scratch).
+[MISCELLANEOUS]
+Miscellaneous
+Various fields used for the administration of the planet class within your game.
+[OREPROD]
+Ore Production
+The number of colonists needed to produce one unit of fuel in one time unit.
+[ORGPROD]
+Organic Production
+The number of colonists needed to produce one unit of organics in one time unit.
+[EQUPROD]
+Equipment Production
+The number of colonists needed to produce one unit of equipment in one time unit.
+[FIGPROD]
+Fighter Production
+The amount of product needed to produce one fighter in one time unit.
+[INITORE]
+Starting Fuel Ore
+The amount of fuel on hand when the planet is created.
+[INITORG]
+Starting Organics
+The amount of organics on hand when the planet is created.
+[INITEQU]
+Starting Equipment
+The amount of equipment on hand when the planet is created.
+[HAZARD]
+Hazard Level
+This setting determines how extreme the losses will be due to natural disaster.
+[HABITABILITY]
+Habitability Rating
+This setting determines how frequently losses will occur due to natural disaster.
+[TWARPDELAY]
+TransWarp Delay
+This setting determines the amount of time, in seconds, it will take the planet to
+move.
+[MOVEDELAY]
+Movement Delay
+This setting determines the number of seconds it will take to move this planet from
+one sector to another sector using Planetary TransWarp.  This setting is effected by
+the Delay Mode factor, and the value assigned here is the one used for NORMAL mode.
+A setting of 1/4th mode, for example, will result in a movement delay of 1/4th this
+setting.
+[ORECOLMAX]
+Maximum Ore Colonists
+The maximum number of colonists in production of fuel ore.
+[ORGCOLMAX]
+Maximum Organics Colonists
+The maximum number of colonists in production of organics.
+[EQUCOLMAX]
+Maximum Equipment Colonists
+The maximum number of colonists in production of equipment.
+[OREINVEN]
+Ore Storage Capacity
+The maximum units of fuel that can be stored on the planet.
+[ORGINVEN]
+Organics Storage Capacity
+The maximum units of organics that can be stored on the planet.
+[EQUINVEN]
+Equipment Storage Capacity
+The maximum units of equipment that can be stored on the planet.
+[FIGINVEN]
+Fighter Storage Capacity
+The maximum number of fighters that can be stored on the planet.
+[SHIELDS]
+Shields Storage Capacity
+The maximum number of shield units that a Citadel on this planet can hold.
+[CITADEL]
+Citadel Technology Level
+The maximum level that a Citadel can be advanced to on this planet.
+[CITOREREQ]
+Citadel Advancement Fuel Ore Requirement
+The amount of fuel ore required when advancing a Citadel to this level.
+[CITORGREQ]
+Citadel Advancement Organics Requirement
+The amount of organics required when advancing a Citadel to this level.
+[CITEQUREQ]
+Citadel Advancement Equipment Requirement
+The amount of equipment required when advancing a Citadel to this level.
+[CITDAYSTOMAKE]
+Citadel Days To Make
+The number of days needed to complete the construction when advancing a Citadel to this level.
+[CITCOLREQ]
+Citadel Colonists Required
+The number of colonists required when advancing a Citadel to this level.
+[DEPLOY]
+General Deployment
+If this setting is enabled, the planet will be available to players.  They can start
+the game with this planet, or the planet may be created with a Genesis Torpedo.  The
+description of this planet is available from the computer's planet database.
+[ANSIDESC]
+ANSI Illustration
+This is the file name of the ANSI file to be displayed to describe this planet.
+The descriptions for these planets should be no more than 23 lines.  You can use
+the standard ANSI files as a template for creating your own.  PLANETX.ANS shows
+examples of planet descriptions.
+
+ANSI files must be placed in the ANSI directory off of the main data directory.
+[TEXTDESC]
+Text Description
+When a player has ANSI capability disabled or when the ANSI Illustration is not
+found or not specified, the text description will be displayed.  Sample text
+descriptions can be found in the ANSI directory as PLANETX.TXT.
+
+Text description files must be placed in the ANSI directory off of the main data directory.
+[ACTIVE]
+Planet Is Active
+You must enable this option before the planet will be deployed into the game.
+If you attempt to deactivate a planet while it is in use by players and/or aliens,
+you will receive notification.  If you proceed, you will be asked to supply
+the planet ID with which to replace all active instances of this planet.  It is
+not recommended that you disable a planet once it is active in the game since
+it is unlikely that the player who owns the planet will be satisfied with the
+replacement.
+[INTEREST]
+Citadel Interest Rate
+Credits stored in a Citadel will generate interest over time.  Standard planets
+have one interest rate of 2%.  Gold planets can be assigned their own interest
+rate per-planet, ranging form -10% to 10% in increments of 0.1%.  A positive interest
+rate will reward players for saving credits in their Citadels, while a negative
+interest rate, which is a new feature for Gold edits, will penalize players for
+hoarding credits.
+
+The default setting is 2%.
+[RESTRICTPROD]
+Restricted Starting Product
+When a planet has starting product commodities, this setting can be used to restrict
+how that product can be used.  Without restricting this product, a player can create
+a planet, then transfer the product off of the planet, destroy the planet, and repeat.
+This is desired in some game styles, but may not be for others.  By restricting these
+products, a player may not remove the starting product from the planet until the
+planet has been upgraded to a Citadel.

@@ -1,0 +1,21 @@
+;A simple example of a lizard-like race based on the Ssi-ruuvi from
+;  Star Wars.
+
+[Options]
+Names=1
+Middle%=0
+
+[Start]
+Shri
+Ssi-
+Shree
+Wur
+Lw
+lv
+
+[End]
+wirr
+ruuvi
+rif
+hekk
+pikkis

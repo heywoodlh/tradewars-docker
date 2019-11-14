@@ -1,0 +1,95 @@
+[IMPEXPNAME]
+Export Pack Name
+
+Specifies the name of the Game Pack to be imported from or exported to.  When using the
+"Build Game Pack" tab, you may specify a file name for the game pack.  When using the
+"Load Game Pack" tab, you will select from a list of game packs located in the Gold
+subdirectory for this game.
+[BUILDGAMEPACK]
+Build Game Pack
+
+This tab is used to select the Gold classes and game settings to be stored into you Game
+Pack.  Whenever a Gold class is selected, that class and all other classes that are
+referenced by it are added to the Game Pack.  For example, if a race class is added to the
+pack, then any ships that are marked to be deployed by that race will also be added.
+
+Files that are used by a Gold class are also added to the game pack.
+
+No redundant classes will be added.  That means that if two Gold classes reference the same
+ship, planet or file, only one instance of the referenced class or file will be added to the
+pack.
+[LOADGAMEPACK]
+Load Game Pack
+
+This tab is used to select the Game Pack that you want to import, browse its contents, and
+then import its classes.  The import operation processes the import file to determine if any
+duplicate classes or files already exist in your current database.  If the class or file
+is already present, the current instance is used in place of the new one.  All references
+to the new class or file will be updated to point to the existing duplicate class or file.
+
+When saving the files used by the classes, if a file name already exists, a unique name is
+formed from the new file name.  The format of the new name is simple.  A number is tacked
+onto the end of the name, truncating the file if needed to provide room for as many digits
+as are needed to produce a unique filename.  For example, if FILE1.TXT already exists,
+the new file name will become FILE2.TXT.  FILE9.TXT will become FILE10.TXT, and FILE9999.TXT
+will become FIL10000.TXT.
+[ADDSETTINGS]
+Include Game Settings
+
+A Game Pack may include a group of game settings.  Use this option to enable saving of a
+group of game settings, and use the "Settings to Export" option to choose which settings to
+include in the Game Pack.  You should only export settings that are important to the "flavor"
+of game you are exporting.  Other settings that are not critical to your game configuration
+should not be exported.  When a gameop imports the Game Pack, only the saved settings will
+be modified.  All other settings will remain just as the gameop has set them.
+[ADDBIGBANG]
+Include Bigbang Settings
+
+Using this option, you can include the settings used to create your game.  A gameop will
+have the option of banging a game that is 100% identical to your own by using the same
+random seed that you used, or he/she may randomize the seed and generate a similar game from
+the same settings.
+[ADDRACE]
+Add Alien Race
+
+Use this option to select an Alien Race to add to your Game Pack.  Not only will the Alien
+Race description record be added to the Game Pack, but all referenced Ship and Planet
+classes, and any auxiliary files (name files, rank files, etc) will also be added.  The
+possible ship and planet classes that may be referenced by an Alien Race includes ships or
+planets deployed by this alien race, or ships or planets specifically selected to be used
+by this race.
+[ADDSHIP]
+Add Ship
+
+Use this option to select a Ship to add to your Game Pack.  Not only will the ship
+description record be added to the Game Pack, but any ship referenced as an escape pod, and
+any auxiliary files (ANSI files, Text files) will also be added.
+[ADDPLANET]
+Add Planet
+
+Use this option to select a Planet to add to your Game Pack.  Not only will the ship
+description record be added to the Game Pack, but auxiliary files (ANSI files, Text files)
+will also be added.
+[VIEWCONTENTS]
+View Game Pack Contents
+
+You may view the classes and files that are marked for export using this feature.
+[EXPORT]
+Export Game Pack
+
+When you are satisfied with the set of Gold classes and game settings you have selected
+for this Game Pack, you may begin the export process by selecting this option.
+[CHOOSESETTINGS]
+Settings to Export
+
+You may choose among a large number of settings that are specified in the General Editors
+One through Three.  Only those that are relevant to the "flavor" of the game you are exporting
+should be included.  The rest of the settings will remain as set when this Game Pack is
+imported.
+[IMPORT]
+Import Game Pack
+
+Use this option to import a Game Pack.  The editor will analyze the Game Pack against your
+existing Gold classes and files to detect duplicates.  If a duplicate is found, a new instance
+of that class or file will not be added.  Instead, the existing class or file will be used
+by the classes being exported.

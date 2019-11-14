@@ -1,0 +1,420 @@
+                          Revision history for
+                         Trade Wars Game Server
+
+
+  v1.02.01
+
+  v1.01.01
+
+  Made a change to the Alien Manager server setup.  I decided the "Enabled/Disabled" setting
+  for alien races was redundant.  Now, if the race has been enabled in the TEDIT Gold editor,
+  a server will load in the Alien Manager automatically.  This means that the TEDIT Gold
+  Race editor Active flag is now the Alien Manager server Enabled flag.
+  
+  I reorganized and added some fields to the Server tab of the Configuration
+  area.
+
+    The priority can be set by the gameop.  The default (if the server has
+    proper security clearence) is high priority which allows the server to
+    stay well ahead of the games that are running in normal priority.  You
+    can adjust this to all possible priority levels, but it is highly
+    recommended that you avoid setting this to real-time.  This priority
+    is typically reserved for the operating system functions.
+
+    Added the ability to select between IP dotted format and name address
+    format for server addresses.  The Server pulldown contains IP and Name
+    to switch between the two.
+
+    Game Port and Admin Port are now lists instead of simple edit fields.
+    The game list includes the three main port numbers for games (default
+    telnet port 23, default RLogin port 513, and recommended custom port 2002)
+    plus a history of other port numbers that have been specified.  Similarly,
+    the admin list includes the custom Admin port of 2003 and a history of
+    others that have been specified.
+
+    Next to the game port, you can select from a list of protocols.  The
+    allowed protocols at this time are telnet and rlogin.  RLogin was added
+    to allow BBSs to pass the user login to TWGS.  This keeps users from
+    creating multiple TWGS game accounts from a single BBS acount.
+
+    Admin port protocol is limited to telnet at this time.
+
+
+  In relation to RLogin support, the game menu now tracks players by name
+  when RLogin is being used.  This allows players to view other players
+  online by their BBS name and see what game they are currently in.  This
+  also allows the gameop to track the player by name using the spy window.
+
+  Changes to Command Center include:
+
+    TWCC attempts to determine if a game has valid game data and makes
+    suggestions about what actions are allowed or discouraged.  For example,
+    trying to bigbang a game with valid data results in a warning dialog.
+    Also, you cannot run TW2002, TEDIT, or EXTERN on games that do not have
+    valid data.
+
+    The error logs feature now brings error logs into a windows-based viewer.
+    When you click on the "Error Log" button, it will open the viewer with
+    the log corresponding to the game that is selected in the TWCC game list.
+    While in the viewer, you may open and close error logs from all of the
+    active games.  You may search the log data and also copy data into the
+    clipboard.
+
+    A new field exists for the gameop's game name when running TWCC Trade Wars
+    sessions.  This allows the gameop to jump into a game without providing
+    the user login name.  This name will persist beyond the current session.
+
+  Using the same detection that TWCC uses to determine if a game is valid,
+  the server will not display a game with invalid data files to the players.
+  This means that a game that is missing one or more of its critical files
+  (it doesn't test to see if they are corrupt) will not be available for the
+  players to play.
+
+  TWCC sessions include the name of the game on the window caption.
+
+  Spy window now offers a list of nodes that may include the user name if
+  the connection mode was RLogin.  This replaces the "Next Node" button as
+  the means of selecting a node to monitor.
+
+  Added context-sensitive help to the server.  Right-clicking most items will
+  bring up a "What's This" option for displaying information.  Soon, a full
+  help file will be included to explain some of the more subtle features of
+  the TWGS ;)
+
+  Changed Spy mode to a console window.  By default, the console window will
+  rely on ANSI.SYS for color output.  A setting called "Spy uses ANSI codes"
+  can be used to disable this behavior and force TWGS to paint the console
+  manually.  You are encouraged to load ANSI.SYS in your CONFIG.SYS file because
+  the screen updates are much more efficient in ANSI mode.
+
+  The Spy window is gone and has been replaced by the Spy node selection box on
+  the main server window.
+
+  Changed Spy mode back to a GUI.  Windows consoles are a pain in the arse.
+  The spy window selection list has been moved back to the Spy window.
+
+  Admin connections are now allowed to start game sessions.  They will be given
+  GAMEOP status in these games.
+
+  Added a ? icon for more obvious context-sensitive help.
+
+  The minimize to tray feature is back
+
+  The spy node list now lists the location of the player (Menu or game letter)
+
+  Game and Admin IP lists now include a "Local Only" check box.  Using this box,
+  you can easily specify that the server should only allow local connections.
+  This setting is separate from the IP list, so turning it on won't effect the
+  list of IPs that you have built.  You can toggle back to the list at any time.
+
+  Added an Admin Remote Command menu.  From this menu, the aministrator can
+  do things like cycle the server, shut the server down (dangerous), disable/
+  enable logins, disable/enable the Alien Manager, view stats, run external
+  processing.  None of these are dangerous enough to require a password
+  (in my opinion), but I'll add that if it becomes necessary.
+
+  Wrote a testing robot that runs from a client machine and continuously starts sessions,
+  spawns games, moves around the TW game, and exits.  Running multiple instances of this
+  gives the server a heavy stress test and has allowed me to pinpoint some otherwise
+  hidden problems.
+
+  When the TWGS icon is clicked, instead of starting a new instance of the server,
+  the active server is brought into focus.
+
+  TWGS is now 100% 32 bit!  TW2002, TEDIT, EXTERN, BIGBANG and NONPSERV have
+  been compiled in 32 bit Delphi.  Aside from the obvious performance benefits,
+  the following result from this change:
+
+    Win95/98 server is not limited to 16 nodes.  Up to 100 nodes can be run
+    in Win95/98 same as WinNT.
+
+    There is no longer a "Run in separate VM" option for either game or alien
+    server sessions.
+
+    Command Center runs a program called TWShell that connects to the game,
+    editor, bigbang or extern via TCP/IP and runs in a windows GUI.  Previous
+    versions ran a 16 bit DOS version in a console.
+
+  You now have the option of running TWGS with the command line parameter of
+  RESTART.  Doing so will cause the currently running TWGS to shutdown and the
+  new instance to start in its place.  This is necessary as a way to allow you
+  to restart the server automatically.
+
+  Revised TWGS menu code.  The new approach should be more robust and slightly
+  less efficient.
+
+  Removed 200 connection demo mode restriction.  Instead, games and tedit sessions
+  are limited to 3 minutes each.  Also, removed 1 node demo limitation and expanded
+  it to 4 nodes.  The new unregistered mode, then, allows up to 4 players on at once
+  remotely, but only for 3 minutes before being disconnected.  Unlimited TWCC access
+  is allowed.
+
+  Bugs fixed:
+
+    Addressed problems with spawning TWCC sessions under WinNT.  I wrote an
+    entirely new system for spawning these sessions so I am hoping that
+    the problems will disappear.
+
+    Fixed a bug with the Spy window.  One of the ANSI displays tended to send
+    an ANSI sequences that was split between two strings causing the ANSI
+    emulation to hang.  It can now handle this situation.
+
+    Fixed a bug that was causing some disconnects to leave a telnet or other
+    client hanging as if the connection was still established.  I now use the
+    proper shutdown command instead of hard disconnect.
+
+    Fixed a bug that was causing alien race servers to stop loading if any
+    of them were not marked as running.
+
+    Fixed a problem with multithread access to shared server resources.  When more than
+    one session attempted access to these resources at the same time, resource corruption
+    resulted.  I have synchronized all threaded access to shared server resources and have
+    done thorough stress-testing to see that the server is stable.
+
+    Fixed a bug that causes EXTERN to occassionaly fail to run.
+
+    Fixed a bug that caused some configuration fields to be altered as a side effect of certain
+    functions.  The result of this bug was that certain TWGS operations no longer functioned, for
+    example, the local Command Center icons wouldn't work, the user name wouldn't be passed to the
+    game, etc.
+
+    Fixed a bug that caused WG3 standard RLogin connections to send the player directly into one of
+    the games.  The server now properly parses the RLogin parameters.
+
+    Fixed a bug that was causing extern to stop running.
+
+    Recompiled server under Delphi 4 to fix memory consumption bug with Delphi 2
+    compiler
+
+    Added Banned IP list
+
+    Added node-specific commands to grid view, accessible by right-clicking a node.
+    Commands are disconnect node, ban IP and spy.
+
+  1.01.25 -
+
+    Added 1 second between commands for TWGS main menu to keep players from
+    hammering the server.
+
+  1.01.27 -
+
+    Removed resource locking code from monitor to make it more efficient.
+
+  1.01.28 -
+
+    Nothing of note
+
+  1.01.29 -
+
+    Optimized menu display code.
+
+    Added Total Server Connections, a value that tracks connections since the
+    server first went online.  Under Configure, Server, you may specify the
+    number of connections to start tallying from (in case there was a reinstall)
+    as well as the start date for tallying.
+
+    Added Scheduler to allow gameops to schedule applications that must run
+    hourly, daily, or weekly.  There is an option to put the server into offline
+    mode during a scheduled process, and you can specify how much delay to give
+    to players, and what message to send to them.
+
+    Added status line to main monitoring screen.
+
+    Added "Startup Mode" to server configuration.  If set to Online, server comes
+    online when TWGS is started.  When set to Offline, server remains offline
+    until manually started.  Default is Online.
+
+    Implemented time-based log file and added player activity tracing.
+
+    Login name is now required in TWGS.
+
+  1.01.30 -
+
+    Games marked as "inactive" can now be accessed from the remote adminstration
+    connection.  This will allow a gameop to edit and test a game remotely before
+    it becomes available to players.
+
+    Admin connection now lists IP with players and admins online.
+
+    Added Enter TW2002/Gold Codes option to Command Center and TWGS Configuration
+    window.  Now TW registrations can be entered directly into TWGS rather than
+    TEDIT.
+
+    Added Paste Codes feature to TWGS Configuration, registration window.  The
+    registration codes that I generate and email can be copied from the email
+    and then pasted into TWGS using this button.
+
+    Added "None" to list of Admin ports so it can be disabled entirely.
+
+  1.01.31 -
+
+    Added Minimized option for TWGS startup.
+
+    Fixed sockets resource problem caused when connections above the server
+    limit are handled.  This bug was causing the buffer space to run out for
+    other TCP/IP applications.
+
+    Fixed error log bug that caused the log to stop displaying errors after it
+    has been purged from the Command Center.
+
+    More changes to scheduler and timer routines to fix boundary problems at
+    midnight.
+
+    Added hidden flag for extern so it will run in the background.
+
+    Added ability to spy on other nodes from and administration connection.
+    This means that multiple nodes can be viewed using a remote connection.
+    Only a single node can be viewed from any given admin connection, but
+    multiple admin connections are allowed.
+
+  1.01.32 -
+
+    Changed administration password system to include global admin password
+    and game-specific local admin passwords.  Entering the global password
+    which is specified in the Config screen, Server tab provides access to
+    all games.  Entering the password for a particular game, which is
+    specified under the Config screen, Games tab, limits administration
+    access to that game only.
+
+    Extern can now be run one game at a time from an admin connection.
+
+    Operations requiring either global administration or game access are
+
+      TEDIT
+      TW2002
+      Extern
+      Spy
+
+    Operations requiring global administration access are
+
+      Cycle server
+      Disable server
+      Toggle Login Enable
+      Reboot system
+
+    Changed the way TWGS stores domains in the IP lists.  Instead of using
+    letters to identify each IP in a list, numbers are used.  There
+    is no limit on the number that can be included in a list.
+
+    Added Reboot System to Remote Admin options
+
+    Added Display Game Logs to Remote Admin options
+
+  1.01.33 -
+
+    Removed up and down arrow on Configure/Games tab game list box.  The game
+    list is sorted on the game letter, but the sort is disabled on this
+    screen to avoid scrambling the game list.
+
+    General cleanup of pointer and object allocations/deallocations.
+
+  1.01.34 -
+
+    Fixed a bug that was causing TWGS to use far more GDI resources than it
+    needed.  This bug could be what has caused many gameops to experience
+    strange behavior that is normally only experienced when system resources
+    are low.
+
+  1.01.35 -
+
+    Fixed a bug that caused the registry to write a zero-length binary instead
+    of a null string in some cases, thus causing unexpected results in the
+    values for some configuration values.  Was responsible for the invalid
+    file crash.
+
+  1.01.36 -
+
+    Further fixes were needed for the registry problem.  .35 was unstable under
+    some systems.
+
+  1.01.37 -
+
+    Fixed problem with TWGS system timers.  The bug caused occasional TWGS crashes.
+
+  1.01.39 - 
+
+    Added tab to Configuration screen to prepare for Trade Wars JumpGate.  This feature
+    is under development and will begin beta tests soon.
+
+  1.01.40 -
+
+    Nothing.
+
+  1.01.41 -
+
+    Minor changes to Admin Menu.  Made "Run all extern" and "Enable/Disable
+    Alien Manager" options global so non-admin gameops can't change them.  Also
+    added an extra "are you sure" and a warning to the Reboot option.
+
+    Minor change to TWGS.LOG processing.  If the log can't be created or opened
+    normally, it attempts to open TWGS.LOG1 up to TWGS.LOG9.  If all attempts
+    to create or open a log fail, the log is disabled.
+
+  1.01.43 -
+
+    When a TW game is hung up, TWGS can detect it and force the game to close.
+    I have changed this so that the test method runs in its own thread because
+    it was causing TWGS to be unresponsive during the 10 seconds of the shutdown
+    test.  I have also extended the shutdown test to 30 seconds to make it more
+    definite that the game is hung.
+
+  1.01.47 -
+
+    Fixed a bug with the spy window.  It wasn't displaying output unless it was
+    in the foreground.
+
+  1.01.48 -
+
+    Fixed a cosmetic bug in the server stats screen.  When displaying a list of
+    IP addresses that include the number 0, the list would display incorrectly.
+
+  1.01.50 -
+
+    Added Service functionality.
+
+    Improved timing functions to perform more efficiently.
+
+    Several changes were made to improve TWGS stability with multiprocessor
+    systems.
+
+  1.01.51 -
+
+    When TWGS is run under NT as a service with the Task Tray icon enabled, there
+    is now a "View TWGS" option to bring it up to the desktop.
+
+    When TWGS is run under NT as a service with the Task Tray icon displayed for
+    non-admin logins, the "View TWGS" and "Close TWGS" options are not available.
+
+  1.01.54 -
+
+    When a TW game is shut down by TWGS or by a dropped carrier, a handle was not
+    being closed.  Over time, this can add up and create resource shortages on the
+    machine running TWGS.  This handle is now properly closed.
+
+    When a socket is aborted because of an abnormal condition, the socket was not
+    being properly closed.  This has been fixed.
+
+  1.01.56 -
+
+    When a new game is added to the game list, an index error would appear.  It
+    would not effect server functionality.  This index error has been resolved.
+
+    When attempting to run TWGS as a service with an OS that uses a non-english
+    language, TWGS would not recognize the administration account.  It now uses
+    a non-locale dependent method to detect an administration account.
+
+    TW game archives were intended for debugging purposes, so a gameop with a
+    game problem could easily send data to EIS for testing.  It has been used to
+    pass game settings around as well, but prior to .56, the registration
+    information for a gameop was passed along with the global settings file.
+    This information is now masked off.
+
+    TW game archives now require that all local data files are archived, but
+    still allow global data files to be included or excluded from an archive.
+
+  v1.02 released, 05/13/2004
+  
+    
+11/25/98 - v1.00
+
+  Initial release.

@@ -1,0 +1,115 @@
+[PREVRACE]
+Previous Race
+Page back through the available alien races.
+[NEXTRACE]
+Next Race
+Page forward through the available alien races.
+[GORACE]
+Get Alien Race
+Select an alien race from which to edit active alien records.
+[PREVALIEN]
+Previous Alien
+Page back through the active aliens of this race.
+[NEXTALIEN]
+Next Alien
+Page forward through the active aliens of this race.
+[GOALIEN]
+Get Alien
+Select an alien record to view and/or edit.
+[HELP]
+Help
+You can receive help for commands by pressing the ? key and then selecting the
+command you are interested in.  You will also be shown the help associated with
+many commands as you are using them.
+[TRAITS]
+Traits
+Various settings to describe this alien.
+[SHIP]
+Ship Settings
+Various settings for the alien's ship.
+[INVENTORY]
+Other Inventory
+Anything this alien is carrying.
+[ALIENNAME]
+Alien Name
+The name of this alien.
+[LOCATION]
+Location
+The sector this alien is currently in.
+[EXPERIENCE]
+Experience
+How many experience points, up to 4,500,000, this alien has.  Also shows the alien's
+ranking.
+[ALIGNMENT]
+Alignment
+How many alignment points, in the range of -4,500,000 to 4,500,000, for this alien.
+[PORTS]
+Port Count
+How many times this alien has landed on a port.  This effects the resale value of
+the alien's ship.
+[KILLS]
+Total Kills
+How many times the alien has killed a player or other alien.
+[SHIPNAME]
+Ship Name
+The name of the alien's current ship.
+[SHIPCLASS]
+Ship Class
+What kind of ship the alien is flying.
+[SHIPMAKE]
+Ship Manufacturer
+What group or corporation manufactures the alien's ship.
+[FIGHTERS]
+Fighters
+How many fighters are carried by the alien.
+[SHIELDS]
+Shields
+How many shields are carried by the alien.
+[TRANSWARP]
+TransWarp Drive
+What kind of TransWarp Drive, if any, is carried by the alien.
+[SCANNER]
+Long Range Scanner
+What kind of long range scanner, if any, is carried by the alien.
+[CLOAKS]
+Cloaking Devices
+How many cloaking devices are carried by the alien.
+[PPROBE]
+Psychic Probe
+Is the alien carrying a Psychic Probe?
+[PSCANNER]
+Planet Scanner
+Is the alien carrying a planetary scanner?
+[CREDITS]
+Credits
+How many credits are carried by the alien.
+[HOLDS]
+Holds
+How many holds are carried by the alien.
+[ORE]
+Ore Onhand
+How many holds of Ore are possessed by the alien.
+[ORGANICS]
+Organics Onhand
+How many holds of Organics are possessed by the alien.
+[EQUIPMENT]
+Equipment Onhand
+How many holds of Equipment are possession by the alien.
+[PHOTONS]
+Photon Missiles
+How many Photon Missiles, if any, are carried by the alien.
+[GENESISTORP]
+Genesis Torpedoes
+How many Genesis Torpedoes are carried by the alien.
+[ARMIDMINES]
+Armid Mines
+How many Armid Mines are carried by the alien.
+[LIMPETMINES]
+Limpet Mines
+How many Limpet Mines are carried by the alien.
+[ATOMICDET]
+Atomic Detonators
+How many Atomic Detonators are carried by the alien.
+[CORBOMITE]
+Corbomite Devices
+How many Corbomite Devices are carried by the alien.

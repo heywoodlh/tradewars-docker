@@ -1,0 +1,343 @@
+[PREVSHIP]
+Previous Class
+Page back through the available ship classes.
+[NEXTSHIP]
+Next Class
+Page forward through the available ship classes.
+[SHIPCLASS]
+Edit Ship Class
+Change the text and/or color format of the ship class.
+
+To change the color, press the ` key.  The currently active color will be displayed with a menu of
+colors.  Make your selection and press enter to return to the Class edit field.
+[RESETSHIP]
+Reset Ship Settings
+Reset the ship settings to the original, standard settings.  Only applicable
+to the standard ships up to and including the Derelict ships.
+[MOVESHIP]
+Move Ship
+This option allows you to move an extended ship class into a standard ship slot.  This is
+useful when you import a ship class that you want to assign to one of the standard ships.
+[SHIPMAKE]
+Edit Ship Make
+This is the manufacturer of this ship class.  There are several common manufacturers
+in Trade Wars, and you can either specify one or choose "Standard Manufacture" to
+allow each ship to be assigned one of these companies at random.
+
+You can specify your own company, or perhaps the race of the alien that typically
+pilots this ship, using the "Other" option.
+
+The first option listed is always the current and default manufacture.
+[GOCLASS]
+Get Ship Class
+Select a ship to edit from all available ship classes.  You will be given "<" and
+">" commands to page backward and forward through the available ships if there
+are too many to display on a single page.
+
+On this and many other ship lists, you will see a + next to active ships.  The
+plus will be blue for normal ships, dark gold for unavailable unique ships, and
+light gold for available unique ships.
+[NEWSHIP]
+Create New Ship Class
+When creating a new ship, you will first be asked to select a ship to base your
+new design on.  This will save time when creating slight modifications to existing
+ship classes.  Once this class has been chosen, the new ship is created as a
+duplicate of that class.  There is no further association between the two classes,
+and you can make the new class as different from the original as you wish.
+
+If this command is invoked from a deleted ship class record, the new ship will
+replace the deleted ship.  Otherwise, the new ship is appended to the end of the
+ship class database.
+[DELETESHIP]
+Delete Ship Class
+You will be prompted to confirm this operation.
+
+When attempting to delete a ship class, the editor will first deactivate it.  If
+deactivation fails (see help on Activate), the ship will not be deleted.  If
+successful, the ship will be physically removed from your database.  In order
+to maintain ship class IDs during an active game, deleted ships will be replaced
+with an empty record.  You may create a new ship at the location of the deleted
+ship by selecting that ship and using the new ship command.  Later, when the
+game is reset, the database will be packed so that all empty ship class records
+will be removed.
+[ABORTCHANGES]
+Abort Changes
+You can revert the current ship class to the last saved version by using this
+command.  You will be prompted to confirm this operation.
+
+Some operations will commit the ship class to disk, and you will be notified
+before the commit occurs.
+[COMMITCHANGES]
+Commit Changes
+You can force the editor to write the ship class to disk using this operation.
+
+You will be prompted for confirmation.
+[MAXIMUMVALUES]
+Maximum Values
+These fields determine the maximum amount of various items that a ship can carry
+or use.
+[INITIALVALUES]
+Initial Values
+These fields specify the initial values for fields that may change during the
+life of the ship.
+[SHIPSETTINGS]
+Settings
+This is a page of options and flags.  Options are equipment that a ship can be
+outfitted with, but that aren't standard issue.  Flags describe specific characteristics
+of the ship.  These may allow special functionality, limit functionality, or limit access.
+[SHIPCOST]
+Ship Cost
+Use this screen to specify the initial cost of a ship.  You will be given free
+access to the cost associated with the hold space, drive system, computer system,
+and hull.  You will also be given a recommended cost based on the settings for
+that ship.  A percentage indicates how much your cost deviates from the recommended
+cost.  These are color coded, with light green indicating the most acceptable
+costs, dark green indicating reasonable costs, light red indicating extreme (high
+or low) costs, and dark red indicating unrealistic costs.  You are allowed to
+set these costs to any value, but be aware of the potential unbalances that
+extreme cost will bring to your game.
+[MISCELLANEOUS]
+Miscellaneous
+Various fields used for the administration of the ship class within your game.
+[HELP]
+Help
+You can receive help for commands by pressing the ? key and then selecting the
+command you are interested in.  You will also be shown the help associated with
+many commands as you are using them.
+[MAXCARGOHOLDS]
+Maximum Cargo Holds
+This is the maximum number of cargo holds that a ship can physically carry.
+[MAXFIGHTERS]
+Maximum Fighters
+This is the maximum number of fighters that this ship can maintain.
+[MAXSHIELDS]
+Maximum Shields
+This is the maximum number of shields that this ship can carry.
+[MAXMINES]
+Maximum Mines
+This is the maximum number of mines that this ship can carry.  The number is for
+Armid and Limpet mines individually.  For example, if the maximum mines is set
+to 10, the ship has capacity to carry 10 Armid mines and 10 Limpet mines.
+[MAXBEACONS]
+Maximum Beacons
+This is the maximum number of Marker Beacons that this ship can carry.
+[MAXGENESIS]
+Maximum Genesis Torpedoes
+This is the maximum number of Genesis Torpedoes that this ship can carry.
+[MAXCLOAKS]
+Maximum Cloaking Devices
+This is the maximum number of Cloaking Devices that this ship can carry.
+[MAXATOMICDET]
+Maximum Atomic Detonators
+This is the maximum number of Atomic Detonators that this ship can carry.
+[MAXCORBOMITE]
+Maximum Corbomite Devices
+This is the maximum number of Corbomite Devices that this ship can carry.
+[MAXETHERPROBE]
+Maximum Ether Probes
+This is the maximum number of Ether Probes that this ship can carry.
+[MAXMINEDIS]
+Maximum Mine Disruptors
+This is the maximum number of Mine Disruptors that this ship can carry.
+[MAXPMISSILE]
+Maximum Photon Missiles
+This is the maximum number of Photon Missiles that this ship can carry.
+[MAXFIGHTERFORCE]
+Maximum Fighter Attack Wave
+This is the maximum number of fighters that this ship can send into a single
+attack.
+[INITHOLDS]
+Initial Holds
+Specifies the number of holds included with the ship.
+[TURN2WARP]
+Turns To Warp
+This value determines the agility of the ship.  Not only does this specify the
+number of turns to be subtracted from a player each time the ship is moved, but
+it also specifies the corresponding physical time that the move takes (See TEDIT General
+Editor Two for more info).
+[OFFENSIVEODDS]
+Offensive Combat Odds
+The offensive combat odds determines how well this ship fairs in aggressive
+combat.  Examples are attacking a player, defensive sector fighters, or defensive planet fighters.
+A higher number indicates greater offensive capability.  The Merchant Cruiser is considered
+baseline at 10.
+[TRANSPORT]
+Transporter Range
+Specifies the maximum range in sector hops that the ship can transport a player.
+A setting of 0 indicates that the ship can only transport in-sector.
+[COMMISSION]
+Imperial Rank
+For ships flagged as Imperial, this is the rank required before a commissioned player
+can freely pilot the ship.  Players not qualified for the ship will not be allowed
+to purchase it from StarDock.
+[DEFENSIVEODDS]
+Defensive Combat Odds
+The defensive combat odds determines how well this ship fairs in defensive
+combat.  Examples are being attacked by a player, offensive sector fighters or offensive planet fighters.
+A higher number indicates greater defensive capability.  The Merchant Cruiser is considered
+baseline at 10.
+[DENSITYSCAN]
+Allow Density Scanner
+Specify whether this ship can be equipped with a Density Scanner.
+[HOLOSCAN]
+Allow Holographic Scanner
+Specify whether this ship can be equipped with a Holographic Scanner.
+[TWARP]
+Allow TransWarp Drive
+Specify whether this ship can be equipped with a TransWarp Drive system.  If
+the ship is allowed to carry a TransWarp drive, then it can be fitted with both
+the Type 1 single ship model and the Type 2 paired ship model.
+[PLANSCAN]
+Allow Planet Scanner
+Specify whether this ship can be equipped with a Planet Scanner.  
+[INTERDICTOR]
+Allow Interdictor Generator
+Specify whether this ship can be equipped with an Interdictor Generator.
+[COMBATSCAN]
+Allow Combat Scanner
+Specify whether this ship can be equipped with a Combat Scanner.  If the ship is
+allowed to carry a Combat Scanner, it will come as standard equipment.
+[ISESCAPEPOD]
+Used As Escape Pod
+This setting must be enabled before this ship can be carried by another ship as
+that ship's escape pod.
+[CANLAND]
+Can Land On Planet
+There are certain reasons that you may want to forbid a ship from entering the
+atmosphere of a planet.  An obvious example is the Interdictor Cruiser which
+was not built to withstand the stress of its own weight under gravity.
+
+Turning this setting off will force any ship to become a level I Transport
+regardless of its Transport rating since it can no longer function as a colonist
+transport ship.
+[GUARDIAN]
+Defensive Guardian Bonus
+This option equips the ship with special equipment and enhanced combat software
+to greatly improve the ships defensive capability when defending its owner's
+planet.
+
+NOTE:  In standard Trade Wars, this ship only guards a corporate planet.  In
+       Trade Wars Gold, this ship will guard any planet owned by the owner of
+       the ship.  If the ship is corporate, it will guard the corporation
+       planets in the sector where it is stationed.  If the ship is private,
+       it will guard the private planets in the sector where it is stationed.
+[FUSIONDRIVE]
+Fusion Drive System
+The standard impulse drive systems use atomic fission.  This technology is inefficient
+and generates enormous stress on the engine.  The cleaner, more efficient Fusion Drive System, while much more
+expensive, has a lower stress coefficient resulting in greatly diminished engine wear.
+[SWAPSHIPS]
+Allow Players to Swap Ships
+This setting determines whether or not players are allowed to swap ships of this class
+while parked in a Citadel.
+[IMPERIAL]
+Require Imperial Commission
+Turning this flag on will make this an Imperial ship.  Only players who have
+achieved an Imperial Commission will be allowed to fly this ship.  You can specify
+the level of experience required before this ship will be made available to
+a commissioned player (see "Rank required for commission" under Initial Values).
+[CORPORATE]
+Require Corporate Status
+Turning this flag on will make this a Corporate ship.  Only players who are
+members of a corporation will be allowed access to these ships.
+[CEO]
+Require CEO Status
+Turning this flag on will make this a Corporate CEO ship.  Only a CEO of a
+corporation will be allowed access to these ships.
+[CARRYPOD]
+Carries Escape Pod
+Specifies whether or not this ship can carry an Escape Pod.  A ship that is
+not equipped with an Escape Pod is very dangerous because its pilot will "go
+down with the ship".
+[PODTYPE]
+Escape Pod
+Specifies the type of Escape Pod that this ship carries.
+[HOLDCOST]
+Cost of Hold Space
+The hold cost is largely determined by the initial number of holds for the ship.
+The maximum hold space is a minor consideration in determining this cost.
+[DRIVECOST]
+Cost of Drive System
+The drive system cost is set according to the mobility of the ship.  The special
+fittings required for a TransWarp drive are included in this cost.
+[COMPUCOST]
+Cost of Computer System
+The computer system cost is determined by several factors.  The combat capabilities
+are partially provided by special computer systems, and nearly every item that
+the ship can be equipped with requires special control systems for proper use.
+[HULLCOST]
+Cost of Ship's Hull
+This is the cost associated with the physical structure of the ship.  The greater
+the ship's capacity for storage and equipment, the greater the cost of the hull.
+Other factors are included, such as the enhanced hull quality of an Imperial ship.
+[DEPLOY]
+Deployment Method
+This setting determines how the ship is to be deployed into your game.  The methods
+are as follows:
+
+  General : Ship can be purchased from StarDock.  The description of the ship
+            is available from the computer's ship database.
+  Alien   : Ship will be piloted by an alien race.  Players will gain access
+            to these ships only by defeating an alien and capturing the ship.
+            The description of the ship is available in the StarDock library
+            under preferred ships of the aliens.
+  Manual  : Ship is to be deployed manually by the sysop.  This ship will not
+            be available to players at StarDock or to aliens.  You must place
+            this ship into the game using the TEDIT features.  The description
+            of the ship is available in the StarDock library under Miscellaneous
+            Ships.
+[TARGRACE]
+Target Race
+For Alien deployment (see Deployment Method), this specifies the aliens that
+will pilot the ship.  This ship will be added to the list of available ships
+for that alien race if that race specifies Alien Deployment as one of its
+available resources.
+[FUNCTIONAL]
+Functional
+For Manual or Alien deployment (see Deployment Method), this specifies whether or not
+the ship will be usable by players, not whether the ship will actually function
+within the game.  When under the command of aliens, these ships will be fully functional.
+If the ship is not functional, then a player who captures the ship can only tow it to StarDock and sell it.  The technology level of the ship
+is beyond the player's comprehension, so he/she will not be able to make personal
+use of the ship.
+[UNIQUE]
+Unique
+For Manual or Alien deployment (see Deployment Method), this specifies that the
+ship is to be unique.  Only one instance of a unique ship should exist within
+a single game.  Once the ship is deployed through Alien deployment, the Available
+flag will be turned off (see Available).  If the ship is deployed manually, you
+should turn the available flag off yourself if there is a possibility that the
+ship might be deployed in some other way (see Specific Ships under the Alien Editor Resource menu).
+[AVAILABLE]
+Available
+For unique ships, this flag determines whether or not the ship is still available to
+be created within the game.  Once it is created, this flag will be turned off (if Manual Deployment,
+you should turn it off yourself) so that the ship will no longer be available for spawned
+Aliens.  You can make the ship available even though it is currently active in the
+game, but the result will be multiple instances of the ship.
+[ANSIDESC]
+ANSI Illustration
+This is the file name of the ANSI file to be displayed to describe this ship.
+Ships of General Deployment should be no more than 16 lines and all other ships
+should be no more than 23 lines.  You can use the standard ANSI files as a template
+for creating your own.  SHIPXX.ANS shows examples of General ships, FERRX.ANS
+shows examples of Alien ships, and ALNX.ANS shows examples of Manual ships.
+
+ANSI files must be placed in the ANSI directory off of the main data directory.
+[TEXTDESC]
+Text Description
+When a player has ANSI capability disabled or when the ANSI Illustration is not
+found or not specified, the text description will be displayed.  Sample text
+descriptions can be found in the ANSI directory as SHIPXX.TXT, FERRX.TXT, and
+ALNX.TXT.
+
+Text description files must be placed in the ANSI directory off of the main data directory.
+[ACTIVE]
+Ship Is Active
+You must enable this option before the ship will be deployed into the game.
+If you attempt to deactivate a ship while it is in use by players and/or aliens,
+you will receive notification.  If you proceed, you will be asked to supply
+the ship ID with which to replace all active instances of this ship.  It is
+not recommended that you disable a ship once it is active in the game since
+it is unlikely that the player who owns the ship will be satisfied with the
+replacement.

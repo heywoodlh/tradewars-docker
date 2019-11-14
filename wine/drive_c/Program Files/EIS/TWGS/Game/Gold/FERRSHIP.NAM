@@ -1,0 +1,37 @@
+;Brute force method - Names are specified in a list
+
+[Options]
+BuildName=No
+
+[First]
+Emerald
+Sapphire
+Ruby
+Diamond
+Gold
+White-gold
+Silver
+Platinum
+Bronze
+Ivory
+Marble
+Ebony
+Jade
+
+[Last]
+Needle
+Dagger
+Hammer
+War Hammer
+Axe
+Arrow
+Mace
+Claw
+Shard
+Talon
+Barb
+Sickle
+Scythe
+Lance
+Garrote
+Cudgel

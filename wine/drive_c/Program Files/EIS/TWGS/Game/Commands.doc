@@ -1,0 +1,31 @@
+                          TW2002 Special Commands
+
+TW handles special startup commands for generating reports and to handle
+other needs.  TW2002 can only be run from the command line with these special
+commands.  TW is only designed to be played from within TWGS and cannot be
+played from a DOS prompt. 
+
+Note also that these commands can only be issued when TWGS is online.  If
+TWGS is not running, the command will fail to run.
+
+To issue a command to TW2002 from the command line, use this format:
+
+TW2002 COMMAND=[Command] DATA=[Datapath]
+
+Where [Datapath] is the path to the game that will process this command.  For
+example, if TWGS is located at C:\TWGS and you've placed a game in the
+default location, the path would be DATA=C:\TWGS\GAME\TW1.
+
+[Command] can be any of the following:
+
+RANKS : TW2002 will generate the ranking files for both player rankings and
+the corporation ranking.  These and all output files will be placed into the
+standard subdirectory OUTPUT off of the game directory.
+
+STATS : TW2002 will update the game stats, generating a file called
+TWSTATS.TXT in the OUTPUT subdirectory.  This list will contain all
+configuration settings as well as dynamic game stats like active players,
+fighter count, port value, etc, that would normally be found at the S and V
+screens.
+
+Additional commands will be added as necessary.

@@ -1,0 +1,862 @@
+|AUTOHELP
+
+~5ษออออออออออออออออออออออออป
+~5บ ~2-=-~3 AutoPilot Help ~2-=- ~5บ
+~5บ ~3<~5Y~3> ~1Yes, stop here     ~5บ
+~5บ ~3<~5N~3> ~1No, continue on    ~5บ
+~5บ ~3<~5E~3> ~1Express Non-Stop   ~5บ
+~5บ ~3<~5I~3> ~1Ship information   ~5บ
+~5บ ~3<~5R~3> ~1Port Report        ~5บ
+~5บ ~3<~5S~3> ~1Long Range Scan    ~5บ
+~5บ ~3<~5D~3> ~1Re-Display Sector  ~5บ
+~5บ ~3<~5P~3> ~1Port and Trade     ~5บ
+~5บ ~3<~2!~3> ~1AutoPilot Help     ~5บ
+~5ศออออออออออออออออออออออออผ
+|TWMENU
+
+~5ษออออออออออออออออออออออออออออออ~E 2 0 0 2 ~5ออออออออออออออออออออออออออออออออป~0
+~5บ                           ~3Global Commands                             ~5บ~0
+~5บ                           ~2=~5-~2=~5-~2=~5-~2=~5-~2=~5-~2=~5-~2=~5-~2=                             ~5บ~0
+~5บ ~3<~5`~3>~B {P17[}{T07}Fed.{t} Comm-Link{p} ~3<~5'~3>~B {P16[}{T10}Sub-Space{t} Radio{p} ~3<~5=~3> ~BHailing Frequencies    ~5บ~0
+~5บ ~3<~5#~3>~B Who's Playing     ~3<~5*~3>~E List All Globals ~3<~5/~3>~B Quick-stats            ~5บ~0
+~5บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ~0
+~5บ        ~3Navigation            Computer              Tactical           ~5บ~0
+~5บ        ~2=~5-~2=~5-~2==~5-~2=~5-~2=            =~5-~2=~5--~2=~5-~2=              =~5-~2=~5--~2=~5-~2=           ~5บ~0
+~5บ ~3<~5D~3> ~1Re-Display Sector ~3<~5C~3> ~1Onboard Computer ~3<~5A~3> ~1Attack Enemy Ship      ~5บ~0
+~5บ ~3<~5P~3> ~1Port and Trade    ~3<~5X~3> ~1Transporter Pad  ~3<~5E~3> ~1{P22[}{T10}Sub-space{t} {T11}EtherProbe{t}{p} ~5บ~0
+~5บ ~3<~5M~3> ~1Move to a Sector  ~3<~5I~3> ~1Ship Information ~3<~5F~3> ~1Take or Leave Fighters ~5บ~0
+~5บ ~3<~5L~3> ~1Land on a Planet  ~3<~5T~3> ~1Corporate Menu   ~3<~5G~3> ~1Show Deployed Fighters ~5บ~0
+~5บ ~3<~5S~3> ~1Long Range Scan   ~3<~5U~3>~1 Use {P12[}{T12}Genesis Torp{t}{p} ~3<~5H~3> ~1Handle Space Mines     ~5บ~0
+~5บ ~3<~5R~3> ~1Release Beacon    ~3<~5J~3>~1 Jettison Cargo   ~3<~5K~3> ~1Show Deployed Mines    ~5บ~0
+~5บ ~3<~5W~3> ~1Tow SpaceCraft    ~3<~5B~3>~1 {P16[}{T11}Interdict{t} Ctrl{p} ~3<~5O~3> ~1Starport Construction  ~5บ~0
+~5บ ~3<~5N~3> ~1Move to NavPoint  ~3<~5!~3>~2 Main Menu Help   ~3<~5Y~3> ~1Set NavPoints          ~5บ~0
+~5บ ~3<~5Q~3> ~2Quit and Exit     ~3<~5Z~3>~2 TradeWars Docs   ~3<~5V~3> ~2View Game Status       ~5บ~0
+~5ศออออออออออออออออออออออออออออออออ ~Bv3~5 อออออออออออออออออออออออออออออออออออผ~0
+|TWCMENU
+
+~5ษอออออออออออออออออออออออออออออออ~E 2 0 0 2 ~5ออออออออออออออออออออออออออออออออป
+~5บ ~2-=-   ~3Navigation~2   -=-  ~2-=-      ~3Misc      ~2-=-   ~2-=-   ~3Displays   ~2-=-  ~5บ
+~5บ ~3<~5F~3> ~1Course Plotter      ~3<~5A~3> ~1Make Announcement    ~3<~5C~3> ~1View Ship Catalog ~5บ
+~5บ ~3<~5I~3> ~1Inter Sector Warps  ~3<~5B~3> ~dBegin Self Destruct  ~3<~5D~3> ~1Scan Daily Log    ~5บ
+~5บ ~3<~5K~3> ~1Your Known Universe ~3<~5N~3> ~1Personal Settings    ~3<~5E~3> ~1Evil Trader Class ~5บ
+~5บ ~3<~5R~3> ~1Port Report         ~3<~5O~3> ~1Change Ship Settings ~3<~5G~3> ~1Good Trader Class ~5บ
+~5บ ~3<~5U~3> ~1{P19[}{T08}T-warp{t} preference{p} ~3<~5P~3> ~1Fire {P15[}{T15}Photon Missile{t}{p} ~3<~5H~3> ~1Alien Trader Rank ~5บ
+~5บ ~3<~5V~3> ~1Avoid Sectors       ~3<~5M~3> ~1Read Your Mail       ~3<~5J~3> ~1Planetary Specs   ~5บ
+~5บ ~3<~5X~3> ~1List Current Avoids ~3<~5S~3> ~1Send Mail            ~3<~5L~3> ~1List Trader Rank  ~5บ
+~5บ ~2-=-   ~3   Other  ~2   -=-  ~3<~5T~3> ~1Current Ship Time    ~3<~5Y~3> ~1Personal Planets  ~5บ
+~5บ ~3<~2!~3> ~1Computer Help       ~3<~5W~3> ~1Use Mine Disruptor   ~3<~5Z~3> ~1Active Ship Scan  ~5บ
+~5บ ~3<~2Q~3> ~1Exit Computer       ~3 ~5 ~3  ~1                     ~3<~5;~3> ~1Scan Current Ship ~5บ
+~5ศอออออออออออออออออออออออออออออออออ ~Bv3~5 อออออออออออออออออออออออออออออออออออผ
+|CITIMAKE
+
+~1This planet does not have a Citadel on it.  If you wish to construct one,
+~1you must first have the raw materials on the planet to build the Citadel.
+
+~1Once a Citadel is built, you will then have the options of leaving your ship
+~1there overnight, storing {T}credits{t} in the treasury, and many other military
+~1functions that can turn your planet into a stronghold that is formidable
+~1indeed!  Addition of a Combat computer will enable your Citadel's systems to
+~1control all fighters on the planet for defense.  Purchase of a {T}Quasar cannon{t}
+~1can give your Citadel the power to attack craft in space in the sector the
+~1planet is in.
+
+~5Citadel construction on this type of planet requires the following:
+|CONHELP
+
+~b                 -=-=- StarPort Construction -=-=-
+
+~1        Star Ports exist all over the known Universe.  Traders construct
+~1these when they have sufficient wealth to finance such an undertaking.
+~1The costs involved with a project such as this is prohibitive and if you
+~1have to ask, you can't afford it.  Star Ports can be designed in a
+~1number of fashions, as export centers, as balanced import/export nodes,
+~1or as import only stations.  Many variations in between can also be
+~1designed.  Ports can only import or export any given product, not both.
+~1Costs involved with upgrading ports reflect the supply/demand of the
+~1product in question and the current levels of trade.  Building a StarPort
+~1requires the resources of a fairly productive planet to support it.  The
+~1planet supports the construction stages which can last from a few days to
+~1many weeks depending on the class of port.  Construction has become a
+~1viable investment for Traders since the outbreak of Port destruction
+~1brought on by the marauding Black Empire.  Many areas of our Universe are
+~1in desperate need of trading centers to help them flourish.  In addition,
+~1prosperous ports can become quite an asset to the builder, as the original
+~1investor will receive a "cut 'o the action".
+|CORPMENU
+
+~5ษออออออออออออออออออออออ~E 2 0 0 2 ~5อออออออออออออออออออออออออป
+~5บ ~3<~5D~3> ~2Display Corporations    ~3<~5X~3> ~1Leave Your Corporation ~5บ
+~5บ ~3<~5J~3> ~2Join a Corporation      ~3<~5L~3> ~1List Corporate Planets ~5บ
+~5บ ~3<~5M~3> ~2Make a New Corporation  ~3<~5!~3> ~1Corporation Help       ~5บ
+~5บ ~3<~2Q~3> ~5QUIT ~2Corp Menu          ~3<~5A~3>~1 Show Corporate Assets  ~5บ
+~5บ ~r-- ~3(~1Corporations Only~3) ~r-- ~1      & Member Locations     ~5บ
+~5บ ~3<~5C~3> ~1Credit Transfer         ~3<~5T~3> ~1Send Corporate Memo    ~5บ
+~5บ ~3<~5F~3> ~1Fighter Transfer          ~r- ~dC.E.O.s  Only ~r-        ~5บ
+~5บ ~3<~5H~3> ~1Mine Transfer           ~3<~5P~3> ~dCorporate Security     ~5บ
+~5บ ~3<~5S~3> ~1Shields Transfer        ~3<~5R~3> ~dDrop Corporate Member  ~5บ
+~5ศออออออออออออออออออออออออ ~Bv3~5 ออออออออออออออออออออออออออออผ
+|GENEBOOM
+
+~2As you give the order, the weapons officer engages a code sequence
+~2that arms the most potent weapon {T}the Federation{t} has ever developed,
+~2the powerful Nuerevy {T}Atomic Detonator{t}.  Each corbomite-encased anti-
+~2matter warhead is powerful enough to shatter a continent.  When
+~2several of these disaster machines are exploded simultaneously along
+~2the fault lines of a planetary body, the resulting force is sufficient
+~2to reduce it to the interstellar dust from whence it came. A flight of
+~2your K3-A fighters takes the planet-busting bombs to the sites
+~2selected by the computer as being the most devastating. You then blast
+~2off from the planet as quickly as possible.  A single laser blast from
+~2your fleet triggers the massive reaction that is truly astounding.
+~2Luckily, your crew has enough time to move the  command ship out of
+~2the blast range so that you can watch the destruction and enjoy it as
+~2well! Unfortunately some of your fighters did not return from the
+~2awesome implosion.
+|GENESIS
+
+~1   Your science officer has detected a nebula in this sector suitable for
+~1system formation. After you register your claim with The Imperial Bureau of
+~1Expansionist Affairs for the territory, you give the order to arm and launch
+~1the {T}Genesis device{t}.
+
+~1   As the {T}Genesis Torpedo{t} leaves the torpedo bay of your ship, it begins to
+~1glow brilliantly as it accelerates it's mass to the critical point. You
+~1immediately warp out of range of the {T}Genesis{t} envelope, and four minutes
+~1later the nebula is transformed into a thriving planetary system with such
+~1a fantastic display of pyrotechnical special effects that it could never be
+~1depicted in a simulation like this!
+
+~1   You bring your ship into orbit about your new planet and make
+~1preparations to explore it.  Of course, now you will need colonists to
+~1really make this planet thrive!
+|HARDWARE
+
+~5ษอออออออออออออออออออออออออออออออป
+~5บ~5{P31|}{T15}The Emporium{t} Daily Specials~2:{p}~5บ
+~5บ                               ~5บ
+~5บ ~3<~5A~3> ~1{P25[}{T25}Atomic Detonators{t}{p} ~5บ
+~5บ ~3<~5B~3> ~1Marker Beacons            ~5บ
+~5บ ~3<~5C~3> ~1{P25[}{T25}Corbomite Devices{t}{p} ~5บ
+~5บ ~3<~5D~3> ~1Cloaking Devices          ~5บ
+~5บ ~3<~5E~3> ~1{P25[}{T12}SubSpace{t} {T12}Ether Probes{t}{p} ~5บ
+~5บ ~3<~5F~3> ~1Planet Scanners           ~5บ
+~5บ ~3<~5L~3> ~1{P25[}{T10}Limpet{t} Tracking Mines{p} ~5บ
+~5บ ~3<~5M~3> ~1Space Mines               ~5บ
+~5บ ~3<~5P~3> ~1{P25[}{T25}Photon Missiles{t}{p} ~5บ
+~5บ ~3<~5R~3> ~1Long Range Scanners       ~5บ
+~5บ ~3<~5S~3> ~1Mine Disruptors           ~5บ
+~5บ ~3<~5T~3> ~1{P25[}{T25}Genesis Torpedoes{t}{p} ~5บ
+~5บ ~3<~5W~3> ~1{P25[}{T18}TransWarp{t} Drives{p} ~5บ
+~5บ ~3<~5Y~3> ~1Psychic Probes            ~5บ
+~5บ                               ~5บ
+~5บ ~3<~2!~3> ~d{P25[}{T20}Hardware Emporium{t} Help{p} ~5บ
+~5บ ~3<~2Q~3> ~d{P25[}Leave {T19}the Emporium{t}{p} ~5บ
+~5ศอออออออออออออออออออออออออออออออผ
+|CORPDISP
+
+~5ษอออออออออออออออออออออออออออออออป
+~5บ ~5TW2002 Corporate Listings~2:    ~5บ
+~5บ                               ~5บ
+~5บ ~3<~5L~3> ~1List Active Corporations  ~5บ
+~5บ ~3<~5R~3> ~1Rank Corporations         ~5บ
+~5บ ~3 ~5 ~3  ~1                          ~5บ
+~5บ ~3<~5Q~3> ~1Quit                      ~5บ
+~5บ                               ~5บ
+~5ศอออออออออออออออออออออออออออออออผ
+|KENTMAD
+
+~1...as your fighters deploy within {T}Federation{t} space, they are immediately
+~1annihilated by a VERY powerful phaser array from {T}the Federation{t} StarShip
+~1the Intrepid.  The monstrous bulk of the cruiser fills your viewscreen
+~1and its warning message blares throughout your ship.
+
+~2"Try that again and you'll get the same!  You should know the regulations
+~2about using arms in {T}the Federation{t}!"
+
+~1Your battle officer reports loss of 10% of your fighters and 10% of your
+~1holds.  It seems the Intrepid was very careful in it's attack and could have
+~1done much MORE damage.
+|LANDEART
+
+~5It takes your very best navigational effort to avoid the multitude of
+~5"space junk" in orbit about this planet.  Your computer system finally
+~5establishes a link with the {T}Terran{t} Traffic control system and you
+~5relax as it brings your ship down automatically onto the last major
+~5Space Port on {T}Terra{t}.  You shut your systems down and head out to the
+~5main colonists' departure terminal, hoping to find plenty of eager people
+~5willing to risk the hazardous trip in CryoFreeze just so they can live on
+~5a clean, abundant planet.
+|MAKEPORT
+
+~5ีัออออออออออออออออออออออออออออััออออออออออออออออออออออออออออออออออััออออออออัธ
+~5ณณ   ~1StarPort Construction    ~5ณณ   ~1Initial Construction Costs     ~5ณณ ~1Import ~5ณณ
+~5ฦุออออออออออออัอออออออออออออออตฦอออออออออัอออออัอออออัอออออัออออออตณ   ~1or   ~5ณณ
+~5ณณ~4 Port Class ~5ณ~4 Ore  Org  Equ ~5ณณ~4 {P07|}{T07}Credits{t}{p} ~5ณ~4 Ore ~5ณ~4 Org ~5ณ~4 Equ ~5ณ~4 Days ~5ณณ~1 Export ~5ณณ
+~5ฦุออออออออออออุอออออออออออออออตฦอออออออออุอออออุอออออุอออออุออออออตฦออออออออุต
+~5ณณ     ~21      ~5ณ  ~1B    ~1B    ~4S~7  ~5ณณ  ~239,250 ~5ณ ~3120 ~5ณ ~3120 ~5ณ  ~360 ~5ณ   ~26  ~5ณณ Import ~5ณณ
+~5ณณ     ~22      ~5ณ  ~1B    ~4S~7    ~1B  ~5ณณ  ~241,500 ~5ณ ~3140 ~5ณ  ~370 ~5ณ ~3140 ~5ณ   ~27  ~5ณณ Import ~5ณณ
+~5ณณ     ~23      ~5ณ  ~4S~7    ~1B    ~1B  ~5ณณ  ~248,000 ~5ณ  ~380 ~5ณ ~3160 ~5ณ ~3160 ~5ณ   ~28  ~5ณณ Import ~5ณณ
+~5ณณ     ~24      ~5ณ  ~4S~7    ~4S~7    ~1B  ~5ณณ  ~237,500 ~5ณ  ~350 ~5ณ  ~350 ~5ณ ~3100 ~5ณ   ~25  ~5ณณ Export ~5ณณ
+~5ณณ     ~25      ~5ณ  ~4S~7    ~1B    ~4S~7  ~5ณณ  ~234,000 ~5ณ  ~340 ~5ณ  ~380 ~5ณ  ~340 ~5ณ   ~24  ~5ณณ Export ~5ณณ
+~5ณณ     ~26      ~5ณ  ~1B    ~4S~7    ~4S~7  ~5ณณ  ~232,500 ~5ณ  ~360 ~5ณ  ~330 ~5ณ  ~330 ~5ณ   ~23  ~5ณณ Export ~5ณณ
+~5ณณ     ~27      ~5ณ  ~4S~7    ~4S~7    ~4S~7  ~5ณณ  ~230,000 ~5ณ  ~320 ~5ณ  ~320 ~5ณ  ~320 ~5ณ   ~22  ~5ณณ Export ~5ณณ
+~5ณณ     ~28      ~5ณ  ~1B    ~1B    ~1B  ~5ณณ  ~250,000 ~5ณ ~3200 ~5ณ ~3200 ~5ณ ~3200 ~5ณ  ~210  ~5ณณ Import ~5ณณ
+~5ณณ     ~39      ~5ณ ~3Not Available ~5ณณ ~3------- ~5ณ ~3--- ~5ณ ~3--- ~5ณ ~3--- ~5ณ ~3---- ~5ณณ ~3------ ~5ณณ
+~5ณณ     ~30      ~5ณ ~3Not Available ~5ณณ ~3------- ~5ณ ~3--- ~5ณ ~3--- ~5ณ ~3--- ~5ณ ~3---- ~5ณณ ~3------ ~5ณณ
+~5ฦุออออออออออออฯอออออออออออออออฯฯอออออออออฯอออออฯอออออฯอออออฯออออออฯฯออออออออุต
+~5ณณ       ~3Ports will initially produce 100 units/day in each category        ~5ณณ
+~5ิฯออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออฯพ
+|NONONO
+
+~1A blaring message comes screaming across your {T}sub-space{t} radio:
+ 
+~2"This is Captain Zyrain, of the StarShip Intrepid, your hostile
+~2 act has been noticed and I feel that I must inform you of the dire
+~2 consequences that you are asking for.  No space piracy will take place
+~2 in {T}Federation{t} space while I am commanding the Intrepid!
+
+~2 Intrepid out..."
+ 
+
+
+~1You notice the un-Godly bulk of the Intrepid looming into view and think
+~1twice about your aggressive actions.
+|PLANHELP
+
+~5ษอออออออออออออออออออออออออออออป
+~5บ ~3<~5A~3> ~1Take All Products       ~5บ
+~5บ ~3<~5C~3> ~1Enter Citadel           ~5บ
+~5บ ~3<~5D~3> ~1Display Planet   ~5       บ
+~5บ ~3<~5M~3> ~1Change Military Levels  ~5บ
+~5บ ~3<~5O~3> ~1Claim Ownership of      ~5บ
+~5บ    ~1   this planet           ~5บ
+~5บ ~3<~5P~3> ~1Change Population Lvls  ~5บ
+~5บ ~3<~5S~3> ~1Load/Unload Colonists   ~5บ
+~5บ ~3<~5T~3> ~1Take or Leave Product   ~5บ
+~5บ ~3<~5Z~3> ~1Try to Destroy Planet   ~5บ
+~5บ                             บ
+~5บ ~3<~2!~3> ~2Planetary Help   ~5       บ
+~5บ ~3<~2Q~3> ~2Leave this Planet~5       บ
+~5ศอออออออออออออออออออออออออออออผ
+|PLANDOCK
+
+~1You shut down all ship systems and retire to your quarters in the Citadel,
+~1confident of your safety here.  Yet you still check the orbital radars 
+~1before heading to bed, just to make sure no enemy is lurking out there.
+
+|CITADEL
+
+~5ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+~5บ ~3<~5B~3> ~1Transporter Control      ~3<~5N~3> ~1{P23[}{T15}Interdictor{t} Control{p} ~5บ
+~5บ ~3<~5C~3> ~1Engage Ship's Computer   ~3<~5P~3> ~1Planetary {P13[}{T13}TransWarp{t}{p} ~5บ
+~5บ ~3<~5D~3> ~1Display Traders Here     ~3<~5R~3> ~1Remain here overnight   ~5บ
+~5บ ~3<~5E~3> ~1Exchange Trader Ships    ~3<~5S~3> ~1Scan this sector        ~5บ
+~5บ ~3<~5G~3> ~1Shield Generator Control ~3<~5T~3> ~1Treasury Fund Transfers ~5บ
+~5บ ~3<~5I~3> ~1Personal Info            ~3<~5U~3> ~1Upgrade Citadel         ~5บ
+~5บ ~3<~5L~3> ~1{P24[}{T16}Quasar Cannon{t} R-Level{p} ~3<~5V~3> ~1Evict the other Traders ~5บ
+~5บ ~3<~5M~3> ~1Military Reaction Level  ~3<~5X~3> ~1Corporation Menu        ~5บ
+~5บ ~3<~2!~3> ~2Citadel Help             ~3<~2Q~3> ~2Leave the Citadel       ~5บ
+~5ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+|PORTMUG
+
+
+~1As you wonder about looking down dark corridors, you hear some noise behind
+~1you.  You spin around to see who is approaching you, but everything goes
+~1dark as you are hit.
+
+~1You wake up a few hours later and find most of your money gone.
+
+|PORTWAND
+
+
+~1You wander about the port but find nothing but locked doors and deadends.
+~1You do notice some rather rough looking characters lurking about the place.
+~1Maybe its not such a good idea to wander about without knowing where its
+~1safe to go?
+
+|SHIP1
+
+~dThe Merchant Cruiser is the standard fare for earning a living in the
+~duniverse.  These craft are moderately fast, well armored and have hard
+~dpoints for many different accessories.  Many cartels use the Merchant
+~dCruiser as their only ship type.  The Merchant is the craft by which
+~dcombat specs are rated for a standard.
+|SHIP2
+
+~dThe Scout Marauder is currently the fastest, conventional drive ship
+~dknown to mankind.  This small speedster can easily outdistance even the
+~dpowerful Corellian Battleships.  It is not equipped for controlling many
+~dfighters or shields, but it fights at 2 to 1 odds due to its quickness
+~dand small size.  This craft cannot carry mines or {T}Genesis Torpedoes{t}.
+~dIt may be small, but this ship's speed and range make up for much.
+|SHIP3
+
+~dMissile Frigates are really nothing more than a retro-fitted Merchant
+~dCruiser.  They maintain the same speed and range of the Merchant but can
+~dcarry twice the firepower.  Commanding a Frigate means that you cannot
+~dtake advantage of much of the additional starship equipment available,
+~dbut their combat advantages make up for that.  The Missile Frigate is
+~dthe only ship outfitted to carry the awesome {T}Photon Missile{t}.  These
+~dweapons of destructions can turn StarPorts into space junk in short
+~dorder.  The {T}Photon Missile{t} was also used effectively in the Trantorian
+~dconflict to totally destroy the enemy's home planet.
+|SHIP4
+
+~dThe Corellian Battleship is a dangerous craft indeed!  This ship packs
+~dthe most punch of any ship in {T}the Federation{t}.  Battleship's can carry
+~dfour times the fighters of a Merchant and deliver them with a much
+~dhigher degree of effectiveness due to their superior combat computers.
+~dThe shield generators on Battleships are capable of shielding the ship's
+~dfighters as well.  This craft is one of the more prestigious and powerful
+~dships available today.
+|SHIP5
+
+~dFew words can actually describe the sheer awe associated with a
+~dCorporate Flagship.  Only available to Corp CEOs, this huge craft is
+~dthe ultimate in power and capability.  Not only can it carry up to
+~d20,000 fighters at one time, this ship carries a powerful combination
+~dof options that will make any foe turn tail and run.
+
+~dThe most impressive capability of the Flagship is the {T}TransWarp{t} Drive.
+~dThis device enables the ship to {T}TransWarp{t} to any other sector in the
+~dUniverse provided one of your fighters is already there emitting a
+~dlocator beam.  Without this, a ship can disapear into {T}TransWarp{t} and
+~dnever be seen again.
+|SHIP6
+
+~dThe Colonial Transport is a massive structure that can only barely be
+~dcalled a ship.  This huge craft is ideal for moving large amounts of
+~dproducts or colonists from place to place.  Though it has a standard
+~ddrive, this ship is rather slow due to the mass involved.  Also, the
+~dcombat computers are rather limited on this craft due to the excessive
+~dneeds of the navigation computers.  The Transport is not outfitted for
+~dcarrying or deploying mines.  Conflict brings the Transport's major
+~dweakness to light.  Due to the size of the craft, it is very hard to
+~ddefend against fighters.
+|SHIP7
+
+~dThe CargoTran is a large ship indeed.  Though not as fast as some of its 
+~drelated trading cousins, this ship can move vast amounts of goods.  It is
+~dtypically a pacifist's ship as it does not carry much in the way of
+~doffensive capabilities but it's very large array of holds makes up for all
+~dof that.  The large shield capacity of this craft makes it safe to wander
+~dhostile territory as well.  This ship is considered by many to be one of
+~dthe top money-makers in the Universe.
+|SHIP8
+
+~dThe Merchant Freighter is the ideal ship for those traders that do not want
+~dto concern themselves with political matters.  It is not a very powerful
+~dship in combat, but its strengths are many.  This ship can carry a large
+~dnumber of shields and manages to outdistance most ships.  After all, "Those
+~dwho fight and run away, live to fight another day" still holds very true in
+~dthe universe as we know it today.
+|SHIP9
+
+~dThe commercial version of {T}a Federation{t} StarShip is not available to just
+~danyone.  This craft is only available to those who are commissioned by
+~d{T}the Federation{t} to aid in their cause.  StarShips are the most closely
+~dguarded technology in existence.  They can carry massive assault power and
+~dthrough the use of the {T}TransWarp{t} drive, they can deliver this power almost
+~danywhere.
+
+~dThe Imperial StarShip is truly the most powerful ship that a private
+~dindividual can command.  More information about qualifying for {T}a Federal{t}
+~dcommission is available at a Police station near you.
+|SHIP10
+
+~dThe Havoc Gunstar is a recently developed ship that owes its existance to
+~dnew developments in micro-miniaturization.  This mid-sized ship is the only
+~done of its size to be able to house {T}a TransWarp{t} drive.  Though it doesn't
+~dcarry a large amount of holds to fuel the {T}TransWarp{t}, it still has a decent
+~d{T}T-Warp{t} range and can arrive at its destination packing a moderate fighting
+~dforce in the bargain.  Watch for this ship to become the favorite of the
+~dMercenary legions in the Universe.
+|SHIP11
+
+~dThe StarMaster represents the latest in technological advances for star
+~dtravel, meeting the needs of those who desire a ship with great speed and
+~dmedium cargo capacity.  Developed to counter the growing threat of space
+~dpiracy, the StarMaster posesses a formidable fire control and weapons
+~dsystem, and a high shield capacity.  The price for this state-of-art craft
+~dis not cheap, but discerning traders will find that the investment will
+~dpay for itself in the long run.
+|SHIP12
+
+~dThe Constellation is the direct offspring of the Correlian Battleship.
+~dWhile not quite as powerful as its distinguished parent, the Constellation
+~dmakes its own mark with greater speed and range.  Traders have dubbed it
+~dthe "baby battleship", but this "infant" is one of the most powerful and
+~dmaneuverable ships available in the universe today.
+|SHIP13
+
+~dThe T'Khasi Orion is the perfect ship for traders who want the speed and
+~dcargo capacity of the Merchant Freighter but need a bit more firepower.
+~dOffering substantially higher combat odds and fighter capacity, the T'Khasi
+~dOrion is an excellent intermediate ship.
+|SHIP14
+
+~dYoung corporations in need of planetary defense should consider the
+~dSentinel.  With its new planetary combat guidance system, this ship's
+~dnormal combat odds of 1:1 shoot up to 4:1 when defending a corporate
+~dplanet.  When an enemy ship enters a sector containing a Sentinel set in
+~ddefense of a corporate planet, the hostile vessel must first destroy the
+~dSentinel and all of its fighters before it may land and attempt any action
+~dtoward the planet.  Remember:  The Sentinel was designed primarily for
+~dPlanetary defense, if used for offensive purposes its combat odds are 1:1.
+|SHIP15
+
+~d"Big, slow and ugly...", seem to be the words most often overheard when
+~dsomeone is describing the Taurean Mule.  Designed in direct competition
+~dwith the CargoTran, the Mule is somewhat faster and possesses a higher
+~dcargo capacity, but it is even more vulnerable to piracy and attack than
+~dit's competitor.  However, this is still a good ship for traders who have
+~dstaked out "safe" trade lanes and do not have to worry about enemy attacks.
+|SHIP16
+
+~dA recently designed vessel, the Interdictor Cruiser is fast becoming
+~dthe great Equalizer of the Universe.  It is as powerful as it is large
+~dand packs a tremendous punch in modern combat.  Unfortunately it cannot
+~duse {T}a TransWarp{t} drive due to its size and its speed is not a great asset.
+~dThe major attraction of this vessel is the {T}Interdictor Generator{t} that
+~dcreates such a large gravity well that no other ship in its sector can
+~dwarp out!  When an Interdictor Cruiser arrives on the scene you had
+~dbetter give up all thoughts of running away. In addition this ship is not
+~dan atmospheric craft and cannot land on any planets.
+|SHIPYARD
+
+~5ษออออออออออออออออออออออออออออออป
+~5บ~5{P30|}{T19}The Federation{t} Shipyards~2:{p}~5บ
+~5บ                              ~5บ
+~5บ ~3<~5B~3> ~1Buy a New Ship           ~5บ
+~5บ ~3<~5S~3> ~1Sell extra Ships         ~5บ
+~5บ ~3<~5E~3> ~1Examine Ship Specs       ~5บ
+~5บ ~3<~5P~3> ~1Buy Class 0 Items        ~5บ
+~5บ ~3<~5R~3> ~1Change Ship Registration ~5บ
+~5บ                              ~5บ
+~5บ ~3<~2!~3> ~dShipyards Help           ~5บ
+~5บ ~3<~2Q~3> ~dLeave the Shipyards      ~5บ
+~5ศออออออออออออออออออออออออออออออผ
+|GALABANK
+
+~5ษออออออออออออออออออออออป
+~5บ  ~5The Galactic Bank~2:  ~5บ
+~5บ                      ~5บ
+~5บ ~3<~5D~3> ~1Make a Deposit   ~5บ
+~5บ ~3<~5E~3> ~1Examine Balance  ~5บ
+~5บ ~3<~5T~3> ~1Transfer Funds   ~5บ
+~5บ ~3<~5W~3> ~1Withdraw Funds   ~5บ
+~5บ                      ~5บ
+~5บ ~3<~2Q~3> ~dLeave the Bank   ~5บ
+~5ศออออออออออออออออออออออผ
+|LIBRARY
+
+~1You have wandered into the entrance of what appears to be a Library of
+~1some kind!  There is a Vid-Panel in front of you with some selections
+~1that you've never seen before.
+|SINGBAR
+
+~1You feel rather nervous as you enter this rather seedy establishment.
+~1But after a few drinks you begin to carouse with members of the opposite
+~1sex and you forget about your surroundings.  You emerge from the place
+~1a few hours later with a nasty headache and you notice that your account
+~1on your VidCreditCard is much lower than when you entered.
+|STARLAND
+
+~1You bring your ship into approach for {T}the Federation{t} {T}StarDock{t}.
+
+~1This has to be the single, largest man-made object you've ever seen.  It
+~1continues on for miles and contains the factories for all of the major
+~1brands of Space-going craft.  Since the materials wars of 1998 on Earth, all
+~1ship builders relocated here.  You've heard many strange stories about the
+~1people and places here, but you haven't found many of either, yet.
+
+~1You lose sight of the boundless reaches of space as your craft descends
+~1amongst the giant buildings onto a landing pad.
+
+~2"All systems secured, welcome to StarGate Alpha I", comes over your ship's
+~2intercom.
+|TRICRON
+
+~5     This is a game of skill  and luck.    You pay an  entry fee to
+~5play the game.   This fee  goes into the  Top Player Jackpot  which
+~5will be detailed later in these instructions.   The game  will last
+~5for 10 rounds.  In each round you will be dealt three  Crons.  Each
+~5Cron  is a  number from  0 to 9.  You will be  using these crons to
+~5form a three-digit number.  To win, your three digit number must be
+~5greater than the dealers.  Before he shows you the cron, the dealer
+~5will  ask you  which  position  your  next  cron  will  occupy  - 1
+~5(hundreds), 2 (tens) or 3 (ones).  Psi-Filters are  used to  insure
+~5that Telepaths and Empaths do not get an  unfair advantage over the
+~5races  that lack  such skills.  The  winning  number  will be added
+~5to  the  winner's cumulative total.  The totals are compared at the
+~5end of  the  ten  rounds  and the  greater of  the  totals  will be
+~5declared the winner.   If the house is the winner, the game is over
+~5and you will have to pay again  if you wish to play again.   If you
+~5are declared the  winner,  your payback is 2 to 1.   If you are the
+~5Top Player you win all accumulated money in the Top Player Jackpot.
+
+|POLICE
+~5ษอออออออออออออออออออออออออออออออออออออออป
+~5บ ~3<~5A~3> ~1{P33[}Apply for {T12}a Federal{t} Commission{p} ~5บ
+~5บ ~3<~5C~3> ~1{P33[}Claim {T20}a Federation{t} Reward{p} ~5บ
+~5บ ~3<~5E~3> ~1Examine the Ten Most Wanted List  ~5บ
+~5บ ~3<~5P~3> ~1Post a Reward on someone          ~5บ
+~5บ                                       ~5บ
+~5บ ~3<~2!~3> ~d{P33[}{T28}FedPolice{t} Help{p} ~5บ
+~5บ ~3<~2Q~3> ~dLeave the Police Station          ~5บ
+~5ศอออออออออออออออออออออออออออออออออออออออผ
+
+|STARMENU
+
+~5ษอออออออออออออออออออออออออออออออออออออออป
+~5บ     ~5Obvious places to go are~2:         ~5บ
+~5บ                                       ~5บ
+~5บ ~3<~5C~3> ~1The CinePlex Videon Theatres      ~5บ
+~5บ ~3<~5G~3> ~1The 2nd National Galactic Bank    ~5บ
+~5บ ~3<~5H~3> ~1{P33[}{T33}The Stellar Hardware Emporium{t}{p} ~5บ
+~5บ ~3<~5L~3> ~1The Libram Universitatus          ~5บ
+~5บ ~3<~5P~3> ~1{P33[}The {T13}Federal{t} Space Police HQ{p} ~5บ
+~5บ ~3<~5S~3> ~1{P33[}{T23}The Federation{t} Shipyards{p} ~5บ
+~5บ ~3<~5T~3> ~1{P33[}{T33}The Lost Trader's Tavern{t}{p} ~5บ
+~5บ                                       ~5บ
+~5บ ~3<~2!~3> ~d{P33[}{T28}Stardock{t} Help{p} ~5บ
+~5บ ~3<~2Q~3> ~dReturn to your ship and leave     ~5บ
+~5ศอออออออออออออออออออออออออออออออออออออออผ
+|STUPID
+
+~1CAPTAIN!  Now you've done it!  Radiation levels are exceeding the
+~1capacity of our shields.  The mains have all shut down and we
+~1can't get the {T}trans warp{t} drive to activate...  This is it
+~1Captain, we're all going to die!
+|TAVERN
+
+~5ษอออออออออออออออออออออออออออออออออออออออป
+~5บ     ~5Obvious things to do are~2:         ~5บ
+~5บ                                       ~5บ
+~5บ ~3<~5A~3> ~1Make an Announcement              ~5บ
+~5บ ~3<~5B~3> ~1Buy something from the bar        ~5บ
+~5บ ~3<~5C~3> ~1Eavesdrop on conversations        ~5บ
+~5บ ~3<~5E~3> ~1Order some food                   ~5บ
+~5บ ~3<~5G~3> ~1{P33[}Try your hand at {T16}Tri-Cron{t}{p} ~5บ
+~5บ ~3<~5T~3> ~1{P33[}Talk to the {T13}grimy Trader{t} in back{p} ~5บ
+~5บ ~3<~5U~3> ~1Use the facilities                ~5บ
+~5บ                                       ~5บ
+~5บ ~3<~5;~3> ~BChat with fellow bar-mates        ~5บ
+~5บ                                       ~5บ
+~5บ ~3<~2!~3> ~dTavern Help                       ~5บ
+~5บ ~3<~2Q~3> ~dLeave the Tavern                  ~5บ
+~5ศอออออออออออออออออออออออออออออออออออออออผ
+|CITIUP2
+
+~1This Citadel does not have a Combat Control System.  To construct one,
+~1you must first have the raw materials on the planet to build it.
+
+~1Once a Combat Control System is built, you will then have the ability to
+~1set the fighters on the planet surface in either defensive or offensive
+~1deployment.  Traders wishing to attack you or take the products of the
+~1planet will have to fight through your fighters first.
+
+~5Construction of a Combat Control Computer on this type of planet requires
+~5the following:
+|CITIUP3
+
+~1This Citadel does not have a {T}Quasar Cannon{t}.  If you wish to construct one,
+~1you must first have the raw materials on the planet to build it.
+
+~1A properly deployed {T}Quasar Cannon{t} is the most powerful weapon known today.
+~1With an adequate fuel supply, a {T}Q-Cannon{t} can outlast even the most powerful
+~1fleet and survive with its base planet intact.  A {T}Quasar Cannon{t} can only
+~1reach ships in the sector its base planet is in, but it reaches them with
+~1an effective firepower that only some large BattleShips can match.
+
+~5Construction of a {T}Quasar Cannon{t} on this type of planet requires
+~5the following:
+|CITIUP4
+
+~1This Citadel does not have a Planetary {T}TransWarp{t} Drive.  To construct one,
+~1you must first have the raw materials on the planet to build it.
+
+~1With a fully operational Planetary {T}TransWarp{t} drive in place, you can move
+~1your planets to any sector you defend!  Your white dwarf star that provides
+~1light and heat for your planet is moved as well in the massive {T}TransWarp{t}
+~1field that this awesome engine creates.  The amount of fuel required to
+~1generate this field is tremendous though, and you will only be able to move
+~1your planet once every 9-10 days.
+
+~5Planetary {T}TransWarp{t} construction on this type of planet requires
+~5the following:
+|CITIUP5
+
+~1This Citadel does not have a Planetary Shielding System.  To construct one,
+~1you must first have the raw materials on the planet to build it.
+
+~1With a fully operational Planetary Shielding System in place, you can rest
+~1assured that no one will easily take over your planet!  Planetary Shields
+~1will prevent not only enemy ships from landing, but they will also negate
+~1the effects of the {T}Photon Missile{t}.  Shielding Control is maintained through
+~1a series of geosynchronous satellites that you transfer shield generators
+~1to.  You can build this level up to a considerable defensive power.
+
+~5Planetary Shielding System construction on this type of planet requires
+~5the following:
+|CITIUP6
+
+~1This Citadel does not have a Planetary {T}Interdictor Generator{t}.  To construct
+~1one you must first have the raw materials on the planet to build it.
+
+~1An operational {T}Interdictor Generator{t} is a much feared defense against
+~1intruders.  The gravity well produced by such a generator prevents an
+~1opponent from generating a warp field and subsequently traps them in your
+~1sector. (where you can deal with them at your leisure).  Be aware that
+~1the generation of such a field drains a tremendous amount of Fuel from
+~1your planet's resources.
+
+~5{T}Interdictor Generator{t} System construction on this type of planet requires
+~5the following:
+|MILIT
+
+~50 would be totally defensive, 50 would use half of the fighters
+~5on the planet in an attack against an intruder landing on this planet
+~5and the remaining half would drop back to defend the Citadel, 100
+~5would use all of the fighters in an assault on the intruder.
+~5Remember that your defensive fighters on a planet have much better odds
+~5than defensive fighters deployed in space.  If a Trader tries to blast
+~5your planet with {T}Photon Missiles{t} (after blowing up the fighters you had
+~5in the sector) then the Combat Control Computer will send this percent of
+~5your fighters into the sector to attack.
+|QUASAR
+
+~1{T}Quasar Cannon{t} reaction level, in the Atmosphere:
+
+~50 would be totally defensive, 50 would use half of the Fuel Ore reserve
+~5on the planet (for each firing), and 100 would use all of the Fuel Ore
+~5remaining against an enemy.  Remember that the {T}Quasar Cannon{t} is MUCH more
+~5effective against an enemy that has entered the atmosphere of the planet.
+|QUASAR2
+
+~1{T}Quasar Cannon{t} reaction level, in the Sector:
+
+~50 would be totally defensive, 50 would use half of the Fuel Ore reserve
+~5on the planet (for each firing), and 100 would use all of the Fuel Ore
+~5remaining against an enemy.  Remember that the {T}Quasar Cannon{t} is MUCH more
+~5effective against an enemy that has entered the atmosphere of the planet.
+~5So shooting at an enemy in the sector will not do as much damage at that
+~5range.
+|TWRETHLP
+
+~5ษออออออออออออออออออออออออออออออป
+~5บ ~3<~5A~3> ~1Attack Deployed Fighters ~5บ
+~5บ ~3<~5D~3> ~1Re-Display this Sector   ~5บ
+~5บ ~3<~5I~3> ~1Information on your ship ~5บ
+~5บ ~3<~5P~3> ~1Pay Toll (if applicable) ~5บ
+~5บ ~3<~5R~3> ~6RETREAT!!!!!!!!!!!!!!!!~5  บ
+~5บ ~3<~5S~3> ~1Surrender your ship      ~5บ
+~5ศออออออออออออออออออออออออออออออผ
+|PLAUNCH
+
+~5  The {T}Photon Missile{t} Detonation rocks your ship as the waves beat upon your
+~5shields.  Your sensors fail momentarily, but then return.  The {T}Photon Wave{t}
+~5is in effect, make ready to invade!
+|ROBPORT
+
+~5After docking with the port, you glance furtively about trying to
+~5estimate this chance to make some "quick" profit. The port staff are
+~5off helping  a few other Traders right now.  Will you go for it?
+|ROBHELP
+
+~5ษออออออออออออออออออออออออออออออป
+~5บ ~3<~5R~3> ~1Rob Money from this Port ~5บ
+~5บ     ~d(Chancy but Profitable)~5  บ
+~5บ ~3<~5S~3> ~1Steal Product from dock  ~5บ
+~5บ     ~d(Easiest for Novices)  ~5  บ
+~5บ ~3<~5Q~3> ~1Quit, nevermind          ~5บ
+~5ศออออออออออออออออออออออออออออออผ
+
+|TWPAHLP
+
+~5ษออออออออออออออออออออออออออออออป
+~5บ ~3<~5A~3> ~1Attack Planet's Fighters ~5บ
+~5บ ~3<~5I~3> ~1Information on your ship ~5บ
+~5บ ~3<~5R~3> ~6RETREAT!!!!!!!!!!!!!!!!~5  บ
+~5ศออออออออออออออออออออออออออออออผ
+|PLANETM
+
+~5Class ~CM~1 - Thick Oxygen/Nitrogen atmosphere.  Specific  gravity within
+~1         0.7 to 1.3 Earth normal.  Random, but mostly  manageable weather
+~1         patterns,  with  temperatures  ranging  from  0  to  40  degrees
+~1         Celsius.    Fertile  soil,  excellent  for  Organic  production.
+~1         Mineral deposits, very good for  Equipment production.  Chemical
+~1         elements  good for  Fuel Ore.  Class M planets are excellent for
+~1         human  colonization and promote an  excellent population  growth
+~1         curve as well  as a very good population harmony quotient.  They
+~1         have an above average  "habitability band".   Drawbacks  include
+~1         overpopulation  problems,  political  unrest  and  human-induced
+~1         destruction of the BioSphere.
+|PLANETU
+
+~5Class ~CU~1 - planets have  very heavy  ranging  to very thin atmospheres
+~1         consisting of various elements, mostly comprised of helium or of
+~1         hydrogen.  Specific gravities can range from 0.2 to 8.0 of Earth
+~1         normal.  Climate patterns  usually extremely  violent with temps
+~1         ranging from -200 to 400 Celsius. Full life  support required at
+~1         all times. No production can sustain itself on a Class U planet.
+~1         Some miners have hinted at very valuable products that they have
+~1         {P64=}extracted from  Class U worlds  but {T16}the Federation{t} does not have{p}
+~1         them in its "Official Guide to Mining".  Class U planets are not
+~1         recommended for colonizations as the environment is harsher than
+~1         being in space itsself.
+|PLANETH
+
+~5Class ~CH~1 - planets have  extremely thin Oxygen / Nitrogen atmospheres.
+~1         Specific gravities are within 0.8 to 2.6 Earth normal.   Climate
+~1         patterns are  violent with temperatures  from 45 to  400 degrees
+~1         Celcius.  Full life  support  required for  colonization.   Zero
+~1         workable soil and  harsh  conditions  make  Organics  production
+~1         impossible.  Good trace elements  for equip but conditions  make
+~1         production  a  gamble   at   best.    Excellent  Ore  production
+~1         possibilities as material is often ejected  by volcanic activity
+~1         and found  on the surface.  Very dangerous  for colony growth as
+~1         unstable planetary crusts often lead  to the complete loss  of a
+~1         {P64=}colony. {T14}The Federation{t} has been known to use Class H planets for{p}
+~1         defense of key sectors due to their large Ore base.
+|PLANETC
+
+~5Class ~CC~1 - planets have  extremely  thin  Oxygen-Nitrogen atmospheres.
+~1         Specific gravity from 0.5 to 1.7 Earth normal.  Meteorologically
+~1         unstable causing  violent conditions.  Temps range from  -10  to
+~1         -190 degrees  Celsius.  Full life support necessary for colonies
+~1         and death rates are high.  No  workable soil base so  hydroponic
+~1         Organics are  limited.   Modest mineral  and  chemicals exist so
+~1         production of Ore  and Equipment  will be below average to none.
+~1         Class C  planets NOT recommended for colonization, their violent
+~1         condition makes it  extremely  hazardous.  Some Class C  planets
+~1         {P64=}have been adopted by  {T15}the Federation{t} and used as prison colonies{p}
+~1         with very effective results.
+|PLANETL
+
+~5Class ~CL~1 - planets have a thin  Oxygen/Nitrogen  atmosphere.  Specific
+~1         gravity within 1.0 to 2.2 Earth normal. Weather patterns are wet
+~1         with  temperatures  ranging  anywhere  from -30  to  50  Celsius
+~1         depending  on the  width  of  the  habitability band.  Excellent
+~1         Mineral and Ore depostits but harsh  conditions only  permit avg
+~1         to below avg Equipment production.  Soil is excellent, providing
+~1         higher than normal organics production.  Colonist specialization
+~1         is necessary to maintain population. Good - very good population
+~1         harmony quotient. Above  average  "habitability band"  but  only
+~1         medium population growth. Drawbacks include hazards to equipment
+~1         and occasional severe weather conditions.
+|PLANETK
+
+~5Class ~CK~1 - planets have a thin  Oxygen/Nitrogen atmosphere.   Specific
+~1         gravity within 0.5 to 1.5  Earth  normal.   Weather patterns are
+~1         mostly dry and hot  with temperatures ranging  fron  40  to  140
+~1         degrees  Celsius.  Little  area of  fertile soil,  very  bad for
+~1         Organics. Very little precious metal making it bad for Equipment
+~1         production. Common Chemical traces making it great for Fuel Ore.
+~1         Class K  worlds  are  average for  humanoid  colonization but an
+~1         arrid and hot climate  requires  specialized colonists.   Narrow
+~1         habitability band but a generally  stable  political environment
+~1         as the population must depend on each other to survive.   Higher
+~1         fatality rate than Class M worlds.
+|PLANETO
+
+~5Class ~CO~1 - planets have a dense Oxygen/Nitrogen  atmosphere.  Specific
+~1         gravity within 1.1 to 1.8 Earth  normal.  Random  and occasional
+~1         violent weather current patterns, with temps ranging  from 20 to
+~1         50 degrees Celsius.  No land mass to speak of, making mining for
+~1         Ore more difficult. Organics production quite good,  (one of the
+~1         best) but a  poor  environment  for building Equipment.  Class O
+~1         planets are more challenging to habitate, but are almost as safe
+~1         as class M.  Good population  growth curve and decent population
+~1         harmony. Their entire surface is habitable with proper gear with
+~1         the only drawbacks being the costs to settle and build citadels.
+|DESTRUCT
+
+~5You issue the command to your Ship computer to start the {T}Corbomite{t}
+~5self-destruct system.  All of your crew jettison in escape pods, but you,
+~5the captain, remain behind with your vessel.  You stand proud on the
+~5wretched remains of the bridge of your ship as the count down finishes:
+
+
+~5In a nearby sector, {T}a Federation{t} Patrol Ship notices a brilliant star
+~5suddenly flare and then die out in the distance......
+|UPPORT
+
+~5ษออออออออออออออออออออออออออออออออป
+~5บ  ~1Upgrade Starport Production~5   บ
+~5ฬออออออออออออออออออออออออออออออออน
+~5บ ~21 ~3Fuel Ore,   costs $~2250~3/unit ~5 บ
+~5บ ~22 ~3Organics,   costs $~2500~3/unit ~5 บ
+~5บ ~23 ~3Equipment,  costs $~2900~3/unit ~5 บ
+~5ฬออออออออออออออออออออออออออออออออน
+~5บ   ~3Choose ~21~3, ~22~3, ~23~3 or ~2Q~3 to quit ~5 บ
+~5ศออออออออออออออออออออออออออออออออผ
+|PLATHELP
+
+~5You may either set the {T}Atomic Detonators{t} and hope that the Colonists do not
+~5"accidently" set them off trying to disarm them (while you're on the planet)
+~5or you can first attack and exterminate the Colonist population to assure a
+~5safer use of the detonators.
+|DESPLAN
+
+~5ษอออออออออออออออออออออออออออป
+~5บ ~3<~5D~3> ~1Use {P17[}{T17}Atomic Detonators{t}{p} ~5บ
+~5บ ~3<~5A~3> ~1Attack Colonists      ~5บ
+~5บ ~3<~5Z~3> ~1Help! (What do I do?) ~5บ
+~5บ ~3<~5Q~3> ~6Never Mind           ~5 บ
+~5ศอออออออออออออออออออออออออออผ
+|UNDERGND
+
+~5ษอออออออออออออออออออออออออออป
+~5บ ~3<~5C~3> ~1Collect on Contract   ~5บ
+~5บ ~3<~5H~3> ~1View Hit Contracts    ~5บ
+~5บ ~3<~5N~3> ~1Get your Name Changed ~5บ
+~5บ ~3<~5P~3> ~1Place a Contract      ~5บ
+~5บ ~3<~2Q~3> ~dLeave this place     ~5 บ
+~5ศอออออออออออออออออออออออออออผ
+|COMMISS
+~5The Sergeant smiles warmly at you and ushers you into a side room
+~5that you've never been in before.  Shortly a tall person with a
+~5commanding presence enters the room.
+
+~2"Congratulations!.  We've had our eyes on you for some time now.
+~2 Welcome to the ranks of {T}the Federation{t}!"
+
+~5He then turns over to you the ship manuals for a Imperial Starship
+~5and briefs you on command of one.  He also outlines what {T}the Federation{t}
+~5expects from you in return. 
+
+~2"From time to time we may call on you to help eradicate some problem
+~2 Trader or help in the fight against the Ferrengi.  We also expect you
+~2 to maintain and even improve the already high standard that you have
+~2 shown in the past!  Do not drop below your new alignment or we will
+~2 have to ah, um, *repossess* anything you might have gained from our
+~2 help"
+
+~5You leave this office with a new resolve to go forth and vanquish Evil!
+
+~5For joining {T}the Federation{t} your alignment becomes 1000!
+|MAINWARN
+
+          ~6 ************** ~1 W A R N I N G ~6 **************
+
+~1 External Maintenance has NOT run recently!  This program MUST be run every
+~1 night for the proper operation of Trade Wars 2002.  External maintenance is
+~1 scheduled to run by the game server, TWGS.  If the server is offline at the
+~1 time extern is scheduled to run, it will not run for the day.  If it fails
+~1 to run for several days, this will disrupt your game.  Unused accounts will
+~1 not be cleared, the Internal Ferrengi will not move, Ports will not get
+~1 built and a few dozen other IMPORTANT things will not happen!
+|TRANSCTL
+
+~5ษออออออออออออออออออออออออออออออออออป
+~5บ   ~5Transporter Main Control~2:      ~5บ
+~5บ                                  ~5บ
+~5บ ~3<~5S~3> ~1Beam to another Ship         ~5บ
+~5บ ~3<~5P~3> ~1Beam to another Planet       ~5บ
+~5บ                                  ~5บ
+~5บ ~3<~2!~3> ~dTransporter Help             ~5บ
+~5บ ~3<~2Q~3> ~dLeave the Transporter        ~5บ
+~5ศออออออออออออออออออออออออออออออออออผ
+
+|||EOF|||

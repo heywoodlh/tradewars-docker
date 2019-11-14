@@ -1,0 +1,220 @@
+
+Non-player Name Generator
+
+
+Instructions
+
+The name generator reads special name format files (extension .NAM) and uses
+the settings and values specified in the file to generate random names for
+the aliens and ships spawned in TradeWars.
+
+A name file consists of several regions.  Some of these regions are required,
+others are optional, and they can be included in any order.
+
+The regions are Start, Middle, End, First, Middle, Last, Title, and Options.
+
+Options contains the settings that determine how the name is formed from
+the groups.  Possible settings are
+
+  BuildName=Yes,No  : If BuildName is enabled, then the Start, Middle, and
+                      End lists are used to supply the fragments that will
+                      form the 1 through 3 parts of the name.  If BuildName
+                      is disabled, then the First, Middle, and
+                      Last lists must be used to supply the strings that will
+                      form the name.
+  Names=Num         : The number of names from 1 to 3.  Like
+                      "John Ray Pritchett".  If 1 is specified, it will be
+                      the First name.  If 2 is specified, they will be
+                      First and Last names.  If 3 is specified, they will
+                      be First, Middle, and Last names.
+  TitleSpace=Yes,No : If a title is supplied, this determines whether or
+                      not to supply a space between the title and the
+                      name.
+  Middle%=Num       : A name always has a start fragment.  This is the
+                      percent that a middle fragment will be included.
+  End%=Num          : This is the percent that the end fragment will occur.
+  Repeats=Yes,No    : If repeats is disabled, the full name will not contain
+                      a repeat of any fragment.
+  Repeat%=Num       : If repeats is enabled, this is the percent of times
+                      that a repeat will be allowed.
+
+Defaults for these settings are:
+
+  BuildName=Yes
+  TitleSpace=Yes
+  Names=2
+  Middle%=25
+  End%=100
+  Repeat%=25
+  Repeats=No
+
+There are two modes for creating names.  One builds the entire name from
+the supplied Start, Middle, and End name fragment lists.  The other forms
+the entire name on a one-to-one basis from the supplied First, Middle,
+and Last name lists.  See examples below to help clarify this.
+
+Here is a description of these lists:
+
+  With BuildName enabled,
+
+  Start contains fragments that will be used to start the First, Middle,
+    and Last names.
+  End contains fragments that will end the First, Middle, and Last names.
+  Middle contains fragments that will occur between Start and Finish.
+
+  With BuildName disabled,
+
+  Start, Middle, and End no longer apply.  Instead,
+
+  First contains the strings used for the First name.
+  Middle contains the strings used for the Middle name.
+  End contains the strings used for the Last name.
+
+  In both cases,
+
+  Title is a string that prefixes the First name.  It is optional.
+
+
+examples:
+
+Test1.nam
+
+  ;Brute force method - Names are specified in a list
+
+  [Options]
+  BuildName=No
+
+  [First]
+  John
+  Gary
+  MaryAnn
+  Angel
+  Tom
+  Scott
+  Eric
+  Chris
+
+  [Last]
+  Pritchett
+  Martin
+  Bethune
+  Beaudoin
+  Millbern
+  Johnson
+  Dunbar
+
+Test2.nam
+
+  ;Cardassian names of one part built from 3 pieces.  Includes title.
+
+  [Options]
+  BuildName=Yes
+  Names=1
+  TitleSpace=No
+  Middle%=25
+  End%=100
+  Repeats=No
+
+  [Title]
+  Gul'
+
+  [Start]
+  Ka
+  Tra
+  Kru
+  Pok
+  Ne
+  Du
+  Ak
+  Gu
+  R'V'
+  Ji'Y'
+  K'T'
+
+  [Middle]
+  ke
+  ga
+  te
+  di
+  qa
+  pa
+  ji
+  e
+  o    
+
+  [End]
+  kat
+  lok
+  get
+  had
+  ton
+  ket
+  had
+  jut
+  qul
+  far
+
+Test3.nam
+
+  ;A simple example of a lizard-like race based on the Ssi-ruuvi from
+  ;  Star Wars.
+
+  [Options]
+  Names=1
+  Middle%=0
+
+  [Start]
+  Shri
+  Ssi-
+  Shree
+  Wur
+  Lw
+  lv
+
+  [End]
+  wirr
+  ruuvi
+  rif
+  hekk
+  pikkis
+
+Test4.nam
+
+  ;The Borg.
+
+  [Options]
+  BuildName=No
+  NameTitle=Borg
+  Names=1
+  Repeats=No
+
+  [First]
+  1 of 4
+  2 of 4
+  3 of 4
+  4 of 4
+  1 of 8
+  2 of 8
+  3 of 8
+  4 of 8
+  1 of 12
+  2 of 12
+  3 of 12
+  4 of 12
+  5 of 12
+  6 of 12
+  7 of 12
+  8 of 12
+  9 of 12
+  10 of 12
+  11 of 12
+  12 of 12
+
+
+You can test your name files and these examples with the program NONPNAME.EXE
+located in the GOLD subdirectory.  This program will report any warnings or
+errors encountered when parsing the name file.
+
+Where To Place .NAM Files
+
+When creating custom .NAM files, you have the option of placing them in the global or the local Gold directory.  If you intend to use the same file for multiple games and you'd like to be able to modify the file once and affect all games, store it in the global Gold directory.  To use the name file with a single game, as is common when important and exporting Gold edits, place the file into the Gold directory off of the game's data directory.  When exporting your edits for others to use, it is preferable to keep your name files local so they will not overwrite any files of the same name on other systems.

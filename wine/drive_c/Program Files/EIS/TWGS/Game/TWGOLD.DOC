@@ -1,0 +1,1028 @@
+
+
+
+                             Trade Wars  2002
+                               Gold Edition
+
+
+
+Introduction .......................................................... 2
+Overview .............................................................. 2
+
+Ship Editor
+
+  Ship Ratings ........................................................ 4
+  Ship Class and Make ................................................. 4
+  Maximum Values ...................................................... 4
+  Initial Values ...................................................... 5
+  Settings ............................................................ 5
+  Costs ............................................................... 5
+  Miscellaneous ....................................................... 6
+
+Planet Editor
+
+  Title ............................................................... 7
+  Class and Subclass .................................................. 7
+  Maximum Values ...................................................... 8
+  Initial Values ...................................................... 8
+  Citadel Values ...................................................... 9
+  Miscellaneous ....................................................... 9
+
+Non-player Editor
+
+  Race and Alien Titles ............................................... 10
+  Race Identification ................................................. 10
+  Settings ............................................................ 10
+  Spawning Profile .................................................... 10
+  Resources ........................................................... 11
+  Rankings ............................................................ 11
+  Miscellaneous ....................................................... 12
+
+Non-player Server
+
+  Running the Server .................................................. 13
+  Server Status Screen ................................................ 13
+
+Gold Development Kit
+
+  Recognized Events ................................................... 15
+  Available Functions ................................................. 16
+  Accessible Fields ................................................... 16
+
+                                                                            2
+
+                               Introduction
+
+Trade Wars 2002 Gold Edition is an expansion for standard Trade Wars and
+adds the ability to create custom ships, planets, and non-players.
+
+
+                                 Overview
+
+Three new editors are included in the Gold Edition of TEDIT.  With these
+editors you will be free to customize all standard ship, planet, and alien
+types and to create your own.
+
+Ship Editor
+
+  All standard ship options are available and can be enabled or disabled
+  for each new ship.  These include TransWarp, Interdictor, Combat
+  Scanner, Planet Scanner, Holographic Scanner, Imperial, CEO, etc.  New
+  ship options have been added as well, including Fusion Drive System,
+  Escape Pod type, Corporate, Unique, etc.  Equipment maximums are
+  completely configurable.  Combat odds have been split into offensive and
+  defensive.  Ship costs are projected based on physical characteristics
+  of each ship, and can be overridden to any value.  Ships are rated based
+  on physical characteristics under four basic categories:  Combat, Cargo,
+  Transport, Scout.
+
+  Ships will be deployed into the game as General, Alien, or Manual.
+  General ships are available at StarDock and their information displays
+  will be available in the computer's ships database.  Alien ships are
+  piloted by a target race, and players gain access to these ships by
+  defeating the alien and capturing the ship.  The information displays
+  for these ships will be available in the StarDock library under the
+  given alien race.  Manual ships are to be placed into the game by the
+  sysop using TEDIT.  These will be the source of special quests.  The
+  information displays for these ships will be available in the StarDock
+  library under Miscellaneous Spacecraft.
+
+Planet Editor
+
+  The Planet Editor includes a planet construction mode that allows you to
+  create a planet based on several physical attributes:  Geological
+  Activity, Temperature, Hydrosphere, Terrain, Atmosphere, Gravity, and
+  Weather.  These determine the class-subclass of the planet, and all
+  planetary parameters are set according to the chosen conditions.  You
+  will then have complete access to all parameters and will be free to set
+  them to any value.
+
+  Planets will be deployed similarly to ships as General, Alien and
+  Manual. General planets are available to players when they start the
+  game or when they use a Genesis Torpedo.  The descriptions of these
+  planets will be available in the computer's planets database.  Alien
+  planets will be the homeworld of the target alien race.  Only enhanced
+  aliens will have homeworlds since basic alien AI makes no use of
+  planets.  The descriptions of these planets will be available in the
+  StarDock library under the given alien race.  Manual planets are to be
+  placed into the game by the sysop using TEDIT.  These will be the source
+  of special quests.  The information displays for these planets will be
+  available in the StarDock library under Miscellaneous Planets.
+
+                                                                            3
+
+Non-player Editor
+
+  There are two categories of Gold aliens: basic and enhanced.
+
+  Basic aliens behave much like the standard Alien Traders, but they can
+  be customized to be very distinct.  They can have their own naming
+  style, rankings for good and evil, and they can fly their own custom
+  ship types. You can customize their spawning parameters to make them as
+  weak or as powerful as you wish.  You can even create "unique" ships to
+  be flown by single "unique" aliens.  Experiment with these basic aliens
+  using the TEDIT Gold Alien Editor.  There is extensive online help
+  available to guide you, and there are sample files in the Gold
+  subdirectory to familiarize you with the creation of name and rank
+  files.
+
+Non-player Server
+
+  Trade Wars Gold aliens are not processed internally by each active game
+  session.  Instead, each alien race is processed by a devoted "non-player
+  server".  The server handles the spawning and movement of the aliens by
+  interacting with the game and players through the data files and with
+  game event messages.  Using special "AI Modules", the server can respond
+  to many game events in very complex ways giving Gold aliens much more
+  depth and variety.
+
+Gold Development Kit
+
+  The Gold Development Kit is needed to create the AI modules used by the
+  enhanced Gold aliens.  With this kit, aliens can be made to react to all
+  events that players receive (player enters sector, exits sector, lands
+  on planet, etc.).  In developing the AI for aliens, the developer will
+  simply write the event handlers for these events.  We've included a
+  group of specialized functions to simplify certain processes, but we've
+  also included a generalized interface to all data files within the game.
+  There should be no limit to what enhanced aliens can do.
+
+  NOTE:  The AI module feature has been put on hold while bugs in the game
+  are addressed.  After these problems have been solved, the AI module
+  feature will be released.
+
+You can enable the Trade Wars Gold extensions from any standard Trade Wars
+v3.06+ by purchasing a Gold registration key for $25 from EIS.
+
+                                                                            4
+
+                         ------------------------
+                                Ship Editor
+                         ------------------------
+
+
+                               Ship Ratings
+
+Each ship is analyzed and assigned a rating in each of four categories:
+Combat, Cargo, Transport, and Scout.
+
+Combat ships are those that excel in both defensive and offensive
+maneuvers.  Agility is important, as is sheer fighter strength.
+
+Cargo and Transport ships are very similar.  Each depends heavily on a
+large cargo capacity.  Better cargo ships have decent defensive
+capabilities as these ships are often used in the unprotected areas of the
+Trade Wars universe.  Transports don't require strong defensive
+capabilities as they are generally used to move colonists along protected
+space routes.  The primary goal of a Transport is the moving of colonists
+from planet to planet, so the ability to enter an atmosphere is critical
+for these ships.
+
+Scout ships are those ships used for various other tasks in Trade Wars.  In
+order to handle such activities as scouting for stocked ports and other
+points of interest, the scout ship must be well equipped with sensing
+equipment.  Other duties include creation of planets, destruction of
+planets, release of marker beacons, etc., and a ship's capacity for carrying
+the equipment needed for these maneuvers is an important factor.  Agility
+and defensive capability are also important.
+
+These ship ratings are used primarily by the alien server when determining
+what ships an alien race will have access to at any given time.  You will
+be able to limit your alien races to less powerful ships at the beginning
+of a game, and let them "grow" into more powerful ships as the game goes on.
+
+Different races will have preference for ships of different categories, so
+you will be able to specify the "timeline" for alien ships for each of the
+four categories.
+
+                                  -------
+
+                            Ship Class and Make
+
+You can specify the class and make of each ship.  You have complete control
+over color formatting for these fields.  The make can be "Standard
+Manufacture" which means that each new instance of a ship will be randomly
+assigned a common Trade Wars manufacturer.  You can also specify a custom
+manufacturer.
+
+                                 --------
+
+                              Maximum Values
+
+This screen sets the maximum capacities allowed for the equipment that a
+given ship can carry.  Available fields are:
+
+  Cargo Holds           Atomic Detonators
+  Fighters              Corbomite Devices
+  Shields               SubSpace Ether Probes
+  Armid/Limpet Mines    Mine Disruptors
+  Marker Beacons        Photon Missiles
+  Genesis Torpedoes     Fighter Attack Force
+  Cloaking Devices
+
+                                                                            5
+Fighter Attack Force is the maximum number of fighters that the ship can
+launch into a single attack during combat.
+
+                                 --------
+
+                              Initial Values
+
+This screen has the initial settings for values that could change over the
+life of the ship.  Available fields are:
+
+  Number of holds             Transporter range
+  Turns to warp one sector    Rank required for commission
+  Offensive combat odds       Defensive combat odds
+
+Offensive combat odds are used when a player is the aggressor in a combat.
+This includes attacking defensive sector fighters, defensive planetary
+fighters, and initiating an attack against a player or alien.
+
+Defensive combat odds are used when a player is the victim in a combat.
+This includes being attacked by offensive sector fighters, offensive
+planetary fighters, and by a player or alien.
+
+                                 --------
+
+                                 Settings
+
+These are options that can be made available for a ship as well as flags
+that define certain behaviors for the ship.  Fields include:
+
+  Allow Density Scanner          Can land on a planet
+  Allow Holographic Scanner      Defensive guardian bonus
+  Allow TransWarp Drive          Fusion drive system
+  Allow Planet Scanner           Allow players to swap ships
+  Allow Interdictor Generator    Require Imperial commission
+  Allow Combat Scanner           Require corporate status
+  Used as Escape Pod             Require CEO status
+                                 Carries Escape Pod
+                                 Escape Pod
+
+The fusion drive system is an improvement over the common atomic fission
+drives used in lower-priced craft.  Engine stresses are greatly reduced,
+and the result is typically a much higher resale value.
+
+If a ship has been flagged as an Escape Pod, it can be assigned to another
+ship as that ship's Escape Pod type.  Escape Pods cannot carry Escape Pods
+themselves.
+
+                                  -------
+
+                                   Costs
+
+Each ship has four basic costs associated with it:  Hold Space, Drive
+System, Computer System, and Ship's Hull.  These are projected for each
+ship based on the parameters specified for that ship.  You will have
+complete control over each of the four basic costs, but you will be
+notified of the amount of discrepancy between the recommended and the
+specified cost.
+
+                                                                            6
+                               Miscellaneous
+
+The miscellaneous menu is used to determine how the ship is deployed in the
+game.  Available options are:
+
+  Deployment method
+  Target race
+  Functional
+  Unique
+  Available
+  ANSI illustration
+  Text description
+  Ship is active
+
+Deployment method is General, Alien, or Manual.  For Alien, target race is
+the race that will pilot the ship in the game.  For Alien and Manual,
+functional determines whether players will be able to use the ship once it
+is captured.  Also for Alien and Manual, unique determines whether a single
+instance of the ship can exist in the game at any given time.  For unique
+ships, available determines whether the ship is currently available for
+use.
+
+The ANSI and text description files can be created for each ship.  These
+fields specify the name of these files.  These descriptions will be
+displayed in either the computer's ships display, or the StarDock library.
+
+Up to 65000 ships can be stored in the Gold ship database, but only 1000
+can be active in the game.  Use the "ship is active" field to enable or
+disable the ship.
+
+                                                                            7
+
+                         ------------------------
+                               Planet Editor
+                         ------------------------
+
+
+                                   Title
+
+You can specify the title for each planet.  You have complete control over
+color formatting for this field.
+
+                                 --------
+
+                            Class and Subclass
+
+The class and subclass IDs are determined by the physical characteristics
+specified in the planet attribute menu.  This menu offers these categories
+and ranges:
+
+  Geological Activity
+
+    Dead
+    Dormant
+    Normal
+    Active
+    Violent
+
+  Temperature
+
+    Searing
+    Hot
+    Normal
+    Cold
+    Frigid
+
+  Hydrosphere
+
+    None
+    Arid
+    Normal
+    Saturated
+    Submerged
+
+  Terrain
+
+    Flat
+    Uniform
+    Normal
+    Rough
+    Precipitous
+
+  Atmosphere
+
+    None
+    Thin
+    Normal
+    Thick
+    Dense
+
+                                                                            8
+  Gravity
+
+    Negligible
+    Low
+    Normal
+    Heavy
+    Crushing
+
+  Weather
+
+    Stagnant
+    Calm
+    Normal
+    Turbulent
+    Chaotic
+
+Normal is determined relative to Earth type planets.
+
+Each attribute range outside of normal will result in a modification of the
+planetary parameters from the Earth normal.  Multiple non-normal attributes
+will result in a cumulative modification of these parameters.
+
+You will be allowed to adjust each planetary parameter individually after
+these initial values are set.
+
+                                 --------
+
+                              Maximum Values
+
+This screen sets the maximum capacities allowed for the various planetary
+parameters.  Available fields are:
+
+  Colonists producing fuel ore
+  Colonists producing organics
+  Colonists producing equipment
+  Storage capacity for fuel ore
+  Storage capacity for organics
+  Storage capacity for equipment
+  Storage capacity for fighters
+  Storage capacity for shields
+  Citadel technology level
+
+The Citadel technology level is the maximum level that a Citadel can be
+constructed to on this planet.
+
+                                 --------
+
+                              Initial Values
+
+This screen has the initial settings for values that could change over the
+life of the planet.  Available fields are:
+
+  Colonists to produce one fuel unit
+  Colonists to produce one organic unit
+  Colonists to produce one equipment unit
+  Colonists to produce one fighter unit
+  Starting fuel ore
+  Starting organics
+  Starting equipment
+  Hazard level
+  Habitability rating
+
+The habitability rating determines how frequent natural disasters occur on
+the planet, and the hazard level determines how extreme the losses from
+these disasters will be.
+
+                                                                            9
+                              Citadel Values
+
+Use this menu to set the requirements for advancement of a Citadel to each
+new level.  The levels of advancement are:
+
+  Unarmed
+  Armed
+  Quasar
+  TransWarp
+  Shields
+  Interdictor
+
+
+The requirements for these levels are
+
+  Fuel ore
+  Organics
+  Equipment
+  Days
+  Colonists
+
+                                  -------
+
+                               Miscellaneous
+
+The miscellaneous menu is used to determine how the planet is deployed in
+the game.  Available options are:
+
+  Deployment method
+  Target race
+  ANSI illustration
+  Text description
+  Planet is active
+
+Deployment method is General, Alien, or Manual.  For Alien, target race is
+the enhanced race that will occupy the planet in the game.
+
+The ANSI and text description files can be created for each planet.  These
+fields specify the name of these files.  These descriptions will be
+displayed in either the computer's planets display, or the StarDock
+library.
+
+Up to 65000 planets can be stored in the Gold planet database, but only
+1000 can be active in the game.  Use the "planet is active" field to enable
+or disable the planet.
+
+                                                                            10
+
+                         ------------------------
+                             Non-player Editor
+                         ------------------------
+
+
+                           Race and Alien Titles
+
+You can specify the titles for each race.  These two titles are intended to
+describe the race as a whole and an individual of the race respectively.
+
+                                  -------
+
+                            Race Identification
+
+The unique race identifier is generated from the race title and slightly
+modified to avoid any collisions with existing races.  This identifier is
+used when running the non-player server.
+
+                                 --------
+
+                                 Settings
+
+This menu offers several parameters that determine how the race will
+function in the game.  These fields are:
+
+  Days until race appears       Travel in groups?
+  Days until full strength      Maximum members of group
+  Initial number of aliens      Spawn anomalous aliens?
+  Maximum number of aliens      Unforgiving?
+  Show alien rank               Regenerate?
+  Movement chance
+  Organization?
+  Xenophobic?
+  Protective?
+
+You can specify that this group is an organization rather than an alien
+race if you want to create some non-player corporation for example.  The
+information about this group will be displayed under "Known Galactic
+Organizations" rather than "Known Alien Races" in the StarDock library.
+
+Xenophobic aliens will tend to leave any sector occupied by a player.
+
+If this race travels in groups, then when an alien moves from one sector to
+another, he will tend to bring up to the maximum members of the group with him.
+
+If you allow the server to spawn anomalous aliens, there is a 1 percent chance
+per spawning event that the alien generated will be more advanced than the other
+aliens by from 100 to 200 days.  If the game age is 30 days and an anomalous
+alien is generated, it will be generated as if the game age was from 130 days to
+230 days.  This will allow more advanced ships to be deployed into the game
+earlier, but with a very low probability.
+
+Unforgiving aliens hold grudges against players who destroy members of their
+race.  In order for a grudge to occur, a player must destroy the alien in view
+of another alien of the same race.  Only 10 players can be place on a grudge
+list at any one time, so when new players are added the oldest will drop off.
+A grudges manifests itself in three ways.  Any attack by the alien will be
+more severe depending on how recent the grudge occurred, aliens will attack
+a player when it enters the alien's current sector, and aliens will attack a
+player when they enter the player's current sector.
+
+Aliens can regenerate.  Regeneration occurs each time an alien attempts to
+move.  The fighters and shields of the alien will regenerate toward the
+average value for the current day.  This will allow aliens weakened in combat
+to "heal", and aliens spawned earlier in the game or with low fighter and
+shield amounts to  grow in strength.
+
+                                 --------
+
+                             Spawning Profile
+
+When an alien is spawned, several equations are used to determine its
+starting attributes and ship equipment.  You have control over the form of
+these equations.  The spawned fields are:
+
+  Fighters
+  Shields
+  Holds
+  Alignment
+  Experience
+  Corbomite
+  Credits
+
+There are six basic forms, and a custom equation option will be available
+in future revisions.  Each equation uses one or more of the following:  two
+variables, T (age of game in days), and X (spawned experience), and three
+constants, A, B, and C.  These constants can be set to a range of positive
+and negative values to effect the result of each equation.
+
+Many equations use a random distribution function r(N), defined as a random
+value between 0 and N.  Therefore, the actual spawned value for each field
+is somewhere between a maximum and minimum value that depends on the values
+of the variables and constants.
+
+The main screen displays the maximum (or minimum) value for each field for the
+start and the full-strength days of this race.  This is the value that would
+occur if each r(N) in the equation returned N.  The display also shows the
+average value returned on these days as determined by a statistical analysis
+of 1000 spawning events.
+
+You can select any of the fields to open the Spawning Equation Editor.  This
+screen allows you to modify the form of the equation and to set the values for
+the variables.  You are also shown a more detailed report of the behavior of
+the chosen equation.  You can specify the day that the report should sample.
+The values shown are the maximum (r(N)=N), minimum (r(N)=0), and the threshold
+values associated with 99%, 90%, 75%, 50%, 25%, 10%, and 1% of the spawned
+aliens.  These percent thresholds are determined from a sample of 1000 spawning
+events, and project the probability that the field for aliens generated on
+this day will be given a value greater than or equal to the associated
+threshold.
+
+You can modify the parameters of an equation and study the sampling report to
+determine the effects.  Using this feedback, you should be able to tailor the
+spawning profile to fit your needs.
+
+                                                                            11
+                                 Resources
+
+This menu determines what resources (ships and planets) the alien race will
+have access to.
+
+  Ship and Planet Deployments
+
+    The race can be given access to ships and planets of General and
+    Alien deployment.  They can also be given access to specifically
+    chosen ships and planets regardless of the ship's or planet's
+    deployment method.
+
+  Days Before Ship Is Accessible
+
+    This table determines which ship rating levels (Combat, Cargo,
+    Transport, Scout, levels I-IV) that an individual alien will have
+    access to based on the age of the game and the experience of the
+    spawned alien.
+
+    A day is assigned to each ship rating level.  This day determines at
+    what point the ship becomes accessible to that alien race.  It does
+    not mean that the ship will be accessible to a given alien once that
+    day has arrived.  The experience generated for an alien is typically
+    a random value between a minimum and maximum value.  On the specified
+    day, the maximum value possible for the spawned experience is used as
+    the experience threshold when determining who has access to a ship of
+    that level.
+
+    As an example, if a Cargo IV is made accessible to a race on day 120,
+    then the experience threshold for a Cargo IV is determined to be the
+    maximum possible experience on that day.  If the experience equation
+    was a simple r(T), meaning a random number between 0 and the game
+    age, then the maximum experience for day 120 would be 120.
+    Therefore, an alien spawned on that day with 120 (a rare occurrence)
+    would have access to this ship.  At day 240, there will be a 50%
+    probability that an alien will have access to a ship of this level.
+    You will see no ships of this level before 120 days, very few at 120
+    and just after, and increasingly many as the days progress above 120.
+
+    An alien will show a preference to the highest level ships available
+    to it, but it is possible for the most powerful of aliens to fly the
+    weakest of ships.
+
+  Sample Available Ships
+
+    This is an important tool to demonstrate what ships your aliens will have
+    available in a game and at what point the ships are likely to be deployed.
+    You can determine when a ship can first appear, when it is more likely to
+    appear, and when it will be common.  You should use this report along with
+    the "days before ship is accessible" values to create a ship deployment
+    timeline.
+
+                                 --------
+
+                                 Rankings
+
+Standard Trade Wars offers two tables for player and alien rankings, one
+for good and one for evil alignments.  Gold allows you to create your own
+ranking tables and assign them to your new aliens.  This screen offers
+these fields:
+
+  Good rank file
+  Evil rank file
+  Highest rank at
+  View good ranks
+  View evil ranks
+
+Rank files are simply ASCII lists with each rank on a separate line going
+from lowest to highest.  There are samples of ranking files in the GOLD
+subdirectory showing the default good and evil ranks, as well as custom
+Ferrengi rankings.
+
+                                                                            12
+The "highest rank at" field is used to determine at what day aliens of the
+maximum rank will begin to appear.  Similar to the ship level tables under
+Resources, the ranking function sets the experience threshold for the
+highest rank to be the maximum possible spawnable experience for the day
+specified in this field.  The rest of the rank levels are assigned
+experience thresholds based on an exponential progression determined by the
+maximum level and the number of ranking levels.
+
+You can sample your ranking tables using the "view good ranks" and "view
+evil ranks" options.
+
+                                  -------
+
+                               Miscellaneous
+
+This menu offers miscellaneous options used to incorporate the aliens into
+the game.  Available options are:
+
+  AI module file
+  Alien name file
+  Sample alien names
+  Ship name file
+  Sample ship names
+  ANSI illustration
+  Text description
+  Race is active
+
+The AI module file is the brains of the enhanced aliens.  These modules can
+be created with a special development kit that will be released by EIS.
+
+  NOTE:  The AI module feature has been put on hold while bugs in the game
+  are addressed.  After these problems have been solved, the AI module
+  feature will be released.
+
+
+The alien and ship name files use a special name generator that reads a
+name description file (extension .NAM).  There are samples of these files
+in the GOLD directory showing the variety of ways that names can be
+generated.  See the NONPNAME.DOC document for further information about
+creating name description files.
+
+You can view several samples generated with the selected name description
+file using the "sample names" options.
+
+The ANSI and text description files can be created for each alien race.
+These fields specify the name of these files.  These descriptions will be
+displayed in the StarDock library.
+
+Up to 65000 races can be stored in the Gold alien race database, but only
+100 races or 1000 individual aliens can be active in the game.  Use the
+"Race is active" field to enable or disable the race.
+
+                                                                            13
+
+                         ------------------------
+                             Non-player Server
+                         ------------------------
+
+
+                            Running the Server
+
+Step one is deciding what race you would like to begin processing.  You
+must activate this alien race under Miscellaneous in the Gold Alien Editor
+of TEDIT.  Also make sure that any ships that your aliens will have access
+to are active, and that any unique ships are available.  Test the name and
+rank generations to see that everything is in order.  If you'd like to see
+aliens immediately in a new game, set the initial number of aliens to
+something greater than 0 under Settings in the Gold Alien Editor.  If you'd
+like to see how the aliens appear in a more advanced game, set the game age
+to a higher number of days in the TEDIT General Editor One.  When
+everything checks out, you are ready to begin processing your new alien in
+a live Trade Wars game.
+
+Each alien has a unique identification string which you can find on the
+Settings screen of the Gold Alien Editor.  For example, the ID string for
+Alien Traders is ALIENTRADERS.  This ID is generated from the name of the
+race, and is modified slightly to avoid collisions with existing races.
+
+To start the server, type NONPSERV [ALIEN ID] from the game directory.  In
+the case of the Alien Traders, this will be NONPSERV ALIENTRADERS.  The
+server will report any problems that it encounters, and if all is well you
+will see the server status screen.
+
+Note that you do not need an active game session to run the alien server.
+You can allow your aliens to continue their activities even when there are
+no players online.  This will be more useful with enhanced aliens.  You can
+set the alien race to discontinue processing until an active player is in
+the game.  This setting is under TEDIT General Editor Two.
+
+                                 --------
+
+                           Server Status Screen
+
+If your game age is higher than the starting day for this race, you should
+begin to see alien spawning events.  These events will display the basic
+characteristics of the aliens.  Another event that you will see immediately
+is the move event.  These demonstrate how the server status screen
+functions.  You will also notice the spinning "working" indicator in the
+upper left corner.  This is meant to convey that the server is functioning
+normally even if very little or no activity is seen.  At the bottom is the
+number of active aliens, maximum number of aliens, time, and number of
+events.  The number of active aliens is the number that should be active on
+that day.  As aliens are killed and respawned, the actual number will vary
+but only for a few moments.  The maximum number of aliens indicates the
+maximum that you specified in the Gold Alien Editor Settings menu.  The
+time and number of events are tallied from activation of the server and
+indicate the seconds that have elapsed and the number of events that have
+occurred respectively.
+
+When a player is active in the game, you will begin to see many other
+events.  These are messages reporting what the alien in a given sector is
+"aware" of.  These are the events that the enhanced aliens will be able to
+react to with an AI Module installed.  For example, a basic alien will
+report that a player has entered its sector, while an enhanced alien could
+report the event and then try to extort money from that player as in the
+case of the enhanced Ferrengi.
+
+                                                                            14
+To exit the server and disable all activity of this alien race, press "Q".
+The spawned and active aliens will still exist within the game, but they
+will be frozen in time.  Since alien combat is handled by the active game
+session, they will function normally when attacked.
+
+If you decide to deactivate a race once it has been active in a game, the
+aliens will be physically removed from the game.
+
+                                                                            15
+
+                         ------------------------
+                           Gold Development Kit
+                         ------------------------
+
+Using the Gold Development Kit (GDK), developers can create enhanced aliens
+that have the ability to react to multiple game events and interact with
+the game and players through a library of standard functions as well as a
+generalized data file interface.
+
+
+                             Recognized Events
+
+    A player entered the game.
+    A player exited the game.
+    A player deployed fighters.
+    A player collected some fighters.
+    A player collected all fighters.
+    A player deployed some mines.
+    A player collected some mines.
+    A player collected all mines.
+    A player is powering up weapons.
+    A player is attacking an abandoned ship.
+    A player is attacking another player.
+    A player is attacking a non-player.
+    A player's ship was destroyed.
+    An unoccupied ship was destroyed.
+    A planet was destroyed.
+    A player entered the sector.
+    A player exited the sector.
+    A planet appeared in the sector.
+    A planet disappeared from the sector.
+    A non-player entered the sector.
+    A non-player exited the sector.
+    A player was towed out of the sector.
+    A ship was towed out of the sector.
+    A player was towed into the sector.
+    A ship was towed into the sector.
+    A player landed on StarDock.
+    A player blasted off from StarDock.
+    A player landed on a planet.
+    A player lifted off from a planet.
+    A player docked at a port.
+    A player lifted off from a port.
+    A player is about to TransWarp out of the sector.
+    A player is about to TransWarp in to the sector.
+    A player TransWarped out of the sector.
+    A player TransWarped in to the sector.
+    A player launched a Genesis Torpedo.
+    A player escaped an exploding planet.
+    A player just escaped the sector in an Escape Pod.
+    A player is attempting to tow you.
+    A player is no longer towing you.
+    A player is no longer in tow.
+    A player just evicted a non-player from a planet.
+    A player sent mail.
+    A player entered the tavern.
+    A player exited the tavern.
+    An EtherProbe passed through the sector.
+    An EtherProbe entered the sector and exploded.
+    A player just launched a Photon Missile.
+
+                                                                            16
+
+                            Available Functions
+
+    Move      : sends object to sector
+    Flee      : object flees to an adjacent sector
+    Update    : Object is updated.  Effects Planet and Port objects
+    Deploy    : Fighters, Armid and Limpet mines are deployed in sector
+
+    Collect   : Fighters, Armid and Limpet mines are collected from sector
+    FedCom    : sends a message on Fed Comm-link
+    Radio     : sends a message on Subspace Radio
+    Hail      : sends a message over Hailing Frequencies
+
+    Land      : Land on a planet
+    Scan      : Scan a sector
+
+    Tow       : Tow spacecraft
+    Genesis   : Create a planet
+    Interdict : Turn on or off interdictor generator for Planet or Ship
+    Attack    : Attack a ship, player, non-player, or port
+
+    EProbe    : Launch probe
+    Starport  : Create a starport
+    Avoid     : Mark a sector to avoid (entire race)
+    Photon    : Launch photon missile
+
+    Mail      : Send mail to user
+    Disrupt   : Use mine disruptor
+    Destroy   : Destroys the object.  Works with Planet and Ship
+    Evict     : Evicts all ships in citadel
+
+    Equip     : Add an item to a ship
+    Detach    : Remove an item from a ship
+    Post      : Post reward or bounty
+    Claim     : Claim reward or bounty
+
+    Announce  : Make announcement at Tavern or to global message file
+    TriCron   : Play TriCron
+    Event     : Trigger an event
+    Message   : Send a message
+
+                                  -------
+
+                             Accessible Fields
+
+  User
+
+    ID          : Record Number
+    Name        : Player's game name
+    Turns       : Turns left
+    BankBalance : Balance at bank
+    PlanetID    : Planet player is on
+    Alignment   : Alignment points
+    Experience  : Experience points
+    ShipID      : Current Ship
+    Credits     : Credits on player
+
+                                                                            17
+  Ship
+
+    ID              : Record number
+    Name            : Name of Ship
+    Shields         : Number of shields
+    Fighters        : Number of fighters
+    Holds           : Number of holds
+    Inventory       : Amount of products
+    Colonists       : Amount of colonists
+    PlanetID        : Planet Ship is on
+    ShipType        : Type of Ship
+    SubType         : Make of Ship
+    TWarpDrive      : TWarp?
+    Cloaks          : Cloaking Devices
+    LRScanner       : Long Range Scanner?
+    GenesisTorpedoes: Genesis Torpedoes
+    Mines           : Mines
+    Beacons         : Beacons
+    Photons         : Photon Missiles
+    AtomicDetonators: Atomic Detonators
+    CorbomiteDevices: Corbomite Devices
+    EtherProbes     : EtherProbes
+    MineDisruptors  : Mine Disruptors
+    PsychicProbe    : Psychic Probes
+    PlanetScanner   : Planet Scanners
+
+  Sector
+
+    ID              : Record number
+    Beacon          : Beacon text
+    Warps           : Warps from this sector
+    Port            : Port in this sector
+    Debris          : Percent of debris
+    Fighters        : Fighters in sector
+    Mines           : Mines in sector
+    FighterMode     : Mode of fighters
+    TollCollected   : Toll collected by fighters
+
+  Port
+
+    ID               : Record number
+    Name             : Port name
+    LastPorted       : Last player to Port
+    LastPortTime     : Time of last Port
+    PortClass        : Class of Port
+    Inventory        : Inventory of Port
+    DaysTillComplete : Days until Port opens
+    LastRobbedBy     : Last player to rob Port
+    Profit           : Profit from Port
+
+                                                                            18
+  Planet
+
+    ID               : Record number
+    Name             : Name of planet
+    Creator          : Creator of planet
+    Workers          : Colonists in production
+    Inventory        : Inventory
+    FighterAttack    : Percent of fighters attacking
+    QuasarAtmos      : Percent of Q-Cannon atmosphere attack
+    QuasarSect       : Percent of Q-Cannon sector attack
+    PlanetClass      : Type of planet
+    Fighters         : Fighters stationed on planet
+    CitadelLevel     : Level of Citadel
+    DaysTillComplete : How long before Citadel is upgraded
+    Shields          : Tens of shields on planet
+    Treasury         : Credits stored in Citadel
+
+  Alien
+
+    ID              : Record number
+    Race            : Race of alien
+    Name            : Name of alien
+    PlanetID        : Planet alien is on
+    Experience      : Experience points of alien
+    Alignment       : Alignment of alien
+    Credits         : Credits owned by alien
+    ShipName        : Name of Ship
+    ShipType        : Type of alien Ship
+    SubType         : Make of alien Ship
+    Shields         : Shields on Ship
+    Fighters        : Fighters on Ship
+    Holds           : Holds on Ship
+    Inventory       : Inventory
+    Colonists       : Amount of colonists
+    TWarpDrive      : TWarp?
+    Cloaks          : Cloaking Devices
+    LRScanners      : Long Range Scanner?
+    GenesisTorpedoes: Genesis Torpedoes
+    Mines           : Mines (Limpet, Armid)
+    Beacons         : Beacons
+    Photons         : Photon Missiles
+    AtomicDetonators: Atomic Detonators
+    CorbomiteDevices: Corbomite Devices
+    EtherProbes     : EtherProbes
+    MineDisruptors  : Mine Disruptors
+    PsychicProbe    : Psychic Probes
+    PlanetScanner   : Planet Scanners
+
+  NOTE:  The AI module feature has been put on hold while bugs in the game
+  are addressed.  After these problems have been solved, the AI module
+  feature will be released.
+
